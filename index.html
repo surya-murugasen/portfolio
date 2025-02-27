@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        nav {
+            background: #007bff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 1s, background 1s;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background: white;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeUp 1s ease-in-out forwards;
+        }
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        .section {
+            max-width: 900px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            animation: fadeUp 1s ease-in-out forwards;
+            .skills-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .skills-buttons button {
+            background: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .skills-buttons button:hover {
+            background: #0056b3;
+        }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <p>Software Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="intro">
+        <p>Hello, It's Me<br>
+        <strong>Surya</strong><br>
+        I'm a B.E Graduate <br>
+        who is passionate about </p>
+        <div id="animated-text">  </div>
+    </div>
+    
+    <div class="container" id="about">
+        <div class="text-content">
+            <h2>About Me</h2>
+            <p>A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects.</p>
+        </div>
+        <img src="your-image.jpg" alt="Surya M" class="profile-image">
+    </div>
+    
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-buttons">
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>React.js</button>
+            <button>Node.js</button>
+            <button>MySQL</button>
+            <button>Java (Advanced)</button>
+            <button>JDBC</button>
+            <button>Hibernate</button>
+            <button>JPA</button>
+            <button>Git & GitHub</button>
+        </div>
+    </section>
+    
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <p><strong>Anti-Face Spoofing System:</strong> Designed and implemented an Anti-Face Spoofing System using Ultralytics YOLO and OpenCV. The project detects and prevents facial spoofing 
+            attempts such as printed photos or videos by analyzing live camera input. Achieved high accuracy in distinguishing real faces from spoofed ones 
+            with real-time detection capabilities. </p>
+        <p><strong>Task Management App:</strong> Developed a full-stack web application for managing tasks with features like task creation, prioritization, due dates, and progress tracking. Built        
+            using React.js, Tailwind CSS, Node.js, and SQL, with a responsive design and secure user authentication. Integrated real-time reminders and 
+            filters for enhanced task organization and user productivity.</p>
+    </section>
+    
+    <section class="section" id="experience">
+        <h2>Experience</h2>
+        <p><strong>QTree Technology - Full Stack Developer Intern:</strong> Worked on scalable web applications, gaining hands-on experience in front-end and back-end development, RESTful API integration, and database management.</p>
+    </section>
+    
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:suryamurugasen135@gmail.com">suryamurugasen135@gmail.com</a></p>
+        <p>Phone: 9092436936</p>
+        <p><a href="https://github.com/surya-murugasen" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank">LinkedIn</a></p>
+    </section>
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+ const textElement = document.getElementById('animated-text');
+const text = "Web Development";
+let index = 0;
+
+function animateText() {
+    textElement.textContent = text.slice(0, index);
+    index++;
+
+    if (index > text.length) {
+        setTimeout(() => {
+            index = 0;
+            animateText();
+        }, 1500); // Slight pause before restarting
+    } else {
+        setTimeout(animateText, 200);
+    }
+}
+
+// Start animation
+animateText();
+
+    </script>
+</script>
+</body>
+</html>
