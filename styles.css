@@ -117,3 +117,193 @@ section {
 #scroll-top:hover {
     background: #0056b3;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #007bff;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+}
+
+#skills li {
+    list-style: none;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 150px; /* Ensures responsiveness */
+    text-align: center;
+}
+
+/* Projects & Experience */
+.project, .experience {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .project, .dark-theme .experience {
+    background: #333;
+}
+
+/* Contact */
+#contact a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+#contact a:hover {
+    background: #0056b3;
+}
+
+/* Scroll to Top Button */
+#scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scroll-top:hover {
+    background: #0056b3;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+    }
+
+    .project, .experience {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    #skills li {
+        width: 80%;
+        margin: auto;
+    }
+
+    .project, .experience {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #contact a {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #scroll-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px;
+    }
+}
