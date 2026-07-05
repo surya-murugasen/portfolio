@@ -3,235 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya's Portfolio</title>
+    <title>Surya M - Software Developer</title>
+    <meta name="description" content="Portfolio of Surya M, a Software Developer skilled in React, Java, Flutter, and Full Stack Web Development.">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-        }
-        header {
-            background: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        nav {
-            background: #007bff;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: color 1s, background 1s;
-            border-radius: 5px;
-        }
-        nav ul li a:hover {
-            background: white;
-            color: #007bff;
-            cursor: pointer;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            opacity: 0;
-            transform: translateY(50px);
-            animation: fadeUp 1s ease-in-out forwards;
-        }
-        .text-content {
-            flex: 1;
-            padding-right: 20px;
-        }
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        .intro {
-            text-align: center;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
-        }
-        .section {
-            max-width: 900px;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px;
-            animation: fadeUp 1s ease-in-out forwards;
-            .skills-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .skills-buttons button {
-            background: #007bff;
-            border: none;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .skills-buttons button:hover {
-            background: #0056b3;
-        }
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-        <p>Software Developer</p>
-        <nav>
-            <ul>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SM.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content fade-in">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Surya M</h1>
+            <h2 class="role">Software Developer</h2>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="Surya M.docx" download="Surya_M_Resume.docx" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+        <div class="hero-image-container fade-in delay-1">
+            <div class="blob-bg"></div>
+            <img src="your-image.jpg" alt="Surya M" class="profile-img" onerror="this.src='https://via.placeholder.com/300x300.png?text=Surya+M'">
+        </div>
     </header>
-    
-    <div class="intro">
-        <p>Hello, It's Me<br>
-        <strong>Surya</strong><br>
-        I'm a B.E Graduate <br>
-        who is passionate about </p>
-        <div id="animated-text">  </div>
-    </div>
-    
-    <div class="container" id="about">
-        <div class="text-content">
-            <h2>About Me</h2>
-            <p>A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects.</p>
+
+    <main>
+        <!-- About (Professional Summary) Section -->
+        <section id="about" class="section about-section observe-me">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="about-grid">
+                <div class="about-card glass text-left">
+                    <p class="summary-text">A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="section experience-section observe-me">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <h3>Full Stack Web Development Training</h3>
+                        <h4>Qtree Technologies</h4>
+                        <span class="timeline-duration">Duration: 6 Months</span>
+                        <ul class="experience-list">
+                            <li>Gained hands-on experience in front-end and back-end technologies including HTML, CSS, JavaScript, and frameworks/libraries such as react.js and node.js.</li>
+                            <li>Developed and deployed dynamic web applications following Agile practices.</li>
+                        </ul>
+                        <div class="tech-used">
+                            <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React.js, Node.js, Agile
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section observe-me">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+                    <div class="skill-chips">
+                        <span>Java (Advanced)</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-brands fa-html5"></i> Frontend</h3>
+                    <div class="skill-chips">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span><span>React.js</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skill-chips">
+                        <span>Node.js</span><span>Express</span><span>JDBC</span><span>Hibernate</span><span>JPA</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile Development</h3>
+                    <div class="skill-chips">
+                        <span>Flutter (Dart)</span><span>React Native</span><span>Xcode</span><span>Android Studio</span><span>Simulator/Emulator</span><span>App Store Deployment</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skill-chips">
+                        <span>MySQL</span><span>Oracle</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-brain"></i> AI / Computer Vision</h3>
+                    <div class="skill-chips">
+                        <span>Ultralytics YOLO</span><span>OpenCV</span><span>LLMs</span><span>Claude</span><span>Antigravity</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies</h3>
+                    <div class="skill-chips">
+                        <span>Git</span><span>GitHub</span><span>Docker</span><span>Postman</span><span>Splunk</span><span>Jira</span><span>Firebase</span><span>CI/CD</span><span>Playwright</span><span>Selenium</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section observe-me">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass">
+                    <div class="project-content">
+                        <h3>TeamTrack – Real-Time Project Management Platform</h3>
+                        <p class="project-stack"><strong>Technology Stack:</strong> Next.js, Node.js (Express), MySQL, and Socket.IO</p>
+                        <p class="project-desc">A full-stack development project built to facilitate real-time project management.</p>
+                        <ul class="project-features">
+                            <li><strong>Authentication:</strong> Implemented JWT-based role access control for secure user management.</li>
+                            <li><strong>Dashboards & Updates:</strong> Developed project dashboards with departmental updates and notifications.</li>
+                            <li><strong>Collaboration:</strong> Enabled real-time team communication and updates using Socket.IO.</li>
+                            <li><strong>Document Management:</strong> Managed document versioning and maintained audit logs for tracking changes.</li>
+                            <li><strong>Backend:</strong> Designed RESTful APIs with MySQL optimization and modular architecture.</li>
+                            <li><strong>Version Control & Deployment:</strong> Used Git/GitHub and CI/CD pipelines for smooth development and deployment.</li>
+                            <li><strong>UI/UX:</strong> Created a responsive, interactive frontend for enhanced user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass">
+                    <div class="project-content">
+                        <h3>ANTI-FACE SPOOFING SYSTEM</h3>
+                        <p class="project-stack"><strong>Technology Stack:</strong> Ultralytics YOLO, OpenCV</p>
+                        <p class="project-desc">Designed and implemented an Anti-Face Spoofing System to prevent facial spoofing attempts such as printed photos or videos by analyzing live camera input.</p>
+                        <ul class="project-features">
+                            <li>Achieved high accuracy in distinguishing real faces from spoofed ones.</li>
+                            <li>Real-time detection capabilities utilizing live camera input.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section about-section observe-me">
+            <h2 class="section-title">Education</h2>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <h3>Bachelor of Engineering | Computer Science</h3>
+                    <p class="highlight">Hindusthan College of Engineering and Technology</p>
+                    <p class="duration">2020 - 2024</p>
+                    <p class="cgpa">CGPA: 8.21</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-content observe-me">
+            <h2 class="section-title">Contact</h2>
+            <p>I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="contact-links">
+                <a href="mailto:suryamurugasen135@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> suryamurugasen135@gmail.com</a>
+                <a href="tel:9092436936" class="contact-btn"><i class="fa-solid fa-phone"></i> 9092436936</a>
+                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
-        <img src="your-image.jpg" alt="Surya M" class="profile-image">
-    </div>
-    
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-buttons">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button>React.js</button>
-            <button>Node.js</button>
-            <button>MySQL</button>
-            <button>Java (Advanced)</button>
-            <button>JDBC</button>
-            <button>Hibernate</button>
-            <button>JPA</button>
-            <button>Git & GitHub</button>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surya M. All Rights Reserved.</p>
         </div>
-    </section>
-    
-    <section class="section" id="projects">
-        <h2>Projects</h2>
-        <p><strong>Anti-Face Spoofing System:</strong> Designed and implemented an Anti-Face Spoofing System using Ultralytics <strong>YOLO</strong> and <strong>OpenCV</strong>. The project detects and prevents facial spoofing 
-            attempts such as printed photos or videos by analyzing live camera input. Achieved high accuracy in distinguishing real faces from spoofed ones 
-            with real-time detection capabilities. </p>
-        <p><strong>Task Management App:</strong> Developed a full-stack web application for managing tasks with features like task creation, prioritization, due dates, and progress tracking. Built        
-            using<strong> HTML</strong> ,<strong>React.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>,<strong>SQL</strong> and <strong>GIT/GITHUB</strong> with a responsive design and secure user authentication. Integrated real-time reminders and 
-            filters for enhanced task organization and user productivity.</p>
-    </section>
-    
-    <section class="section" id="experience">
-        <h2>Experience</h2>
-        <p><strong>QTree Technology - Full Stack Developer Intern:</strong> Worked on scalable web applications, gaining hands-on experience in front-end and back-end development, <strong>RESTful API</strong> integration, and <strong>database management</strong>.</p>
-    </section>
-    
-    <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:suryamurugasen135@gmail.com">suryamurugasen135@gmail.com</a></p>
-        <p>Phone: 9092436936</p>
-        <p><a href="https://github.com/surya-murugasen" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank">LinkedIn</a></p>
-    </section>
-    <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    </footer>
 
- const textElement = document.getElementById('animated-text');
-const text = "Web Development";
-let index = 0;
-
-function animateText() {
-    textElement.textContent = text.slice(0, index);
-    index++;
-
-    if (index > text.length) {
-        setTimeout(() => {
-            index = 0;
-            animateText();
-        }, 1500); // Slight pause before restarting
-    } else {
-        setTimeout(animateText, 200);
-    }
-}
-
-// Start animation
-animateText();
-
-    </script>
-</script>
 </body>
 </html>
