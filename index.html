@@ -9,176 +9,255 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0b0f19',
+                        darker: '#131b2f',
+                        accent: '#3b82f6',
+                        accent2: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+<body class="bg-dark text-slate-200 antialiased font-sans overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">SM.</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 bg-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="nav-container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="logo text-2xl font-extrabold text-white tracking-wide">SM.</a>
+            <ul class="nav-links hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-accent font-semibold transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-accent font-semibold transition-colors">About</a></li>
+                <li><a href="#experience" class="hover:text-accent font-semibold transition-colors">Experience</a></li>
+                <li><a href="#skills" class="hover:text-accent font-semibold transition-colors">Skills</a></li>
+                <li><a href="#projects" class="hover:text-accent font-semibold transition-colors">Projects</a></li>
+                <li><a href="#education" class="hover:text-accent font-semibold transition-colors">Education</a></li>
+                <li><a href="#contact" class="hover:text-accent font-semibold transition-colors">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="hamburger md:hidden cursor-pointer">
+                <span class="bar block w-6 h-0.5 bg-white mb-1 transition-all"></span>
+                <span class="bar block w-6 h-0.5 bg-white mb-1 transition-all"></span>
+                <span class="bar block w-6 h-0.5 bg-white transition-all"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-content fade-in">
-            <p class="greeting">Hello, I'm</p>
-            <h1 class="name">Surya M</h1>
-            <h2 class="role">Software Developer</h2>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="Surya M.docx" download="Surya_M_Resume.docx" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+    <header class="hero min-h-screen flex items-center justify-center pt-24 px-6 max-w-7xl mx-auto gap-12" id="home">
+        <div class="hero-content flex-1 fade-in">
+            <p class="greeting text-accent text-lg font-semibold mb-2">Hello, I'm</p>
+            <h1 class="name text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 tracking-tight">Surya M</h1>
+            <h2 class="role text-3xl md:text-4xl text-slate-400 mb-6 font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Software Developer</h2>
+            <div class="hero-actions flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="#projects" class="btn btn-primary px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-accent to-accent2 shadow-[0_4px_15px_rgba(59,130,246,0.3)] hover:scale-105 transition-transform text-center">View Projects</a>
+                <a href="Surya M.pdf" download="Surya_M_Resume.pdf" class="btn btn-secondary px-8 py-3 rounded-full font-semibold text-white border-2 border-accent hover:bg-accent transition-colors text-center"><i class="fa-solid fa-download mr-2"></i> Download Resume (PDF)</a>
             </div>
         </div>
-        <div class="hero-image-container fade-in delay-1">
-            <div class="blob-bg"></div>
-            <img src="your-image.jpg" alt="Surya M" class="profile-img" onerror="this.src='https://via.placeholder.com/300x300.png?text=Surya+M'">
+        <div class="hero-image-container flex-1 relative flex justify-center items-center fade-in delay-1 hidden md:flex">
+            <div class="blob-bg absolute w-96 h-96 bg-gradient-to-br from-accent to-accent2 rounded-full blur-[80px] opacity-30 animate-pulse"></div>
+            <img src="your-image.jpg" alt="Surya M" class="profile-img w-72 h-72 rounded-full object-cover z-10 border-4 border-white/10 shadow-2xl relative" onerror="this.src='https://via.placeholder.com/300x300.png?text=Surya+M'">
         </div>
     </header>
 
-    <main>
+    <main class="space-y-24 py-12">
         <!-- About (Professional Summary) Section -->
-        <section id="about" class="section about-section observe-me">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="about-grid">
-                <div class="about-card glass text-left">
-                    <p class="summary-text">A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects.</p>
+        <section id="about" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Professional Summary</h2>
+            <div class="flex justify-center">
+                <div class="glass max-w-3xl p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-1 transition-transform duration-300">
+                    <p class="summary-text text-lg text-slate-300 leading-relaxed text-left">
+                        A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects. Experienced in building scalable <strong class="text-accent font-semibold">Microservices</strong> and delivering high-quality solutions for <strong class="text-accent font-semibold">MES (Manufacturing Execution Systems)</strong> and <strong class="text-accent font-semibold">Fintech</strong> domains.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Professional Experience Section -->
-        <section id="experience" class="section experience-section observe-me">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass">
-                        <h3>Full Stack Web Development Training</h3>
-                        <h4>Qtree Technologies</h4>
-                        <span class="timeline-duration">Duration: 6 Months</span>
-                        <ul class="experience-list">
-                            <li>Gained hands-on experience in front-end and back-end technologies including HTML, CSS, JavaScript, and frameworks/libraries such as react.js and node.js.</li>
+        <section id="experience" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Professional Experience</h2>
+            <div class="max-w-4xl mx-auto relative pl-8 border-l-2 border-white/10">
+                
+                <div class="timeline-item relative mb-12 group">
+                    <div class="timeline-dot absolute -left-[41px] top-6 w-4 h-4 bg-accent rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:scale-125 transition-transform duration-300"></div>
+                    <div class="glass p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl transition-all duration-300 hover:border-accent/50 hover:shadow-accent/10 hover:-translate-y-1">
+                        <h3 class="text-2xl font-bold text-white mb-2">Full Stack Web Development Training</h3>
+                        <h4 class="text-accent2 text-lg font-semibold mb-3">Qtree Technologies</h4>
+                        <span class="inline-block px-4 py-1 bg-white/5 rounded-full text-sm mb-6 text-slate-300">Duration: 6 Months</span>
+                        <ul class="list-disc pl-5 space-y-3 text-slate-300 text-left">
+                            <li>Gained hands-on experience in front-end and back-end technologies including HTML, CSS, JavaScript, and frameworks/libraries such as React.js and Node.js.</li>
                             <li>Developed and deployed dynamic web applications following Agile practices.</li>
                         </ul>
-                        <div class="tech-used">
-                            <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React.js, Node.js, Agile
+                        <div class="mt-6 pt-4 border-t border-white/10 text-sm text-slate-400 text-left">
+                            <strong class="text-accent">Technologies Used:</strong> HTML, CSS, JavaScript, React.js, Node.js, Agile
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section skills-section observe-me">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
-                    <div class="skill-chips">
-                        <span>Java (Advanced)</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span>
+        <section id="skills" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill Category 1 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-code text-accent mr-3"></i> Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Java (Advanced)</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JavaScript</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">TypeScript</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Dart</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-brands fa-html5"></i> Frontend</h3>
-                    <div class="skill-chips">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span><span>React.js</span>
+
+                <!-- Skill Category 2 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-brands fa-html5 text-accent mr-3"></i> Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">HTML</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">CSS</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Tailwind CSS</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">React.js</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
-                    <div class="skill-chips">
-                        <span>Node.js</span><span>Express</span><span>JDBC</span><span>Hibernate</span><span>JPA</span>
+
+                <!-- Skill Category 3 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-server text-accent mr-3"></i> Backend & Architecture</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Node.js</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Express</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Microservices</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JDBC</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Hibernate</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JPA</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile Development</h3>
-                    <div class="skill-chips">
-                        <span>Flutter (Dart)</span><span>React Native</span><span>Xcode</span><span>Android Studio</span><span>Simulator/Emulator</span><span>App Store Deployment</span>
+
+                <!-- Skill Category 4 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-mobile-screen-button text-accent mr-3"></i> Mobile Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Flutter (Dart)</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">React Native</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Xcode</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Android Studio</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">App Store Deployment</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
-                    <div class="skill-chips">
-                        <span>MySQL</span><span>Oracle</span>
+
+                <!-- Skill Category 5 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-database text-accent mr-3"></i> Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">MySQL</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Oracle</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-brain"></i> AI / Computer Vision</h3>
-                    <div class="skill-chips">
-                        <span>Ultralytics YOLO</span><span>OpenCV</span><span>LLMs</span><span>Claude</span><span>Antigravity</span>
+
+                <!-- Skill Category 6 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-brain text-accent mr-3"></i> AI & Quality Assurance</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">LLMs</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Claude</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Antigravity</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Ultralytics YOLO</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">OpenCV</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Playwright</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Selenium</span>
                     </div>
                 </div>
-                <div class="skill-category glass">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies</h3>
-                    <div class="skill-chips">
-                        <span>Git</span><span>GitHub</span><span>Docker</span><span>Postman</span><span>Splunk</span><span>Jira</span><span>Firebase</span><span>CI/CD</span><span>Playwright</span><span>Selenium</span>
+
+                <!-- Skill Category 7 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors md:col-span-2 lg:col-span-3">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-screwdriver-wrench text-accent mr-3"></i> Tools & Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Git</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">GitHub</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Docker</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Postman</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Splunk</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Jira</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Firebase</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">CI/CD</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Playwright</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Selenium</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Antigravity</span>
+                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">LLM Studio</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section projects-section observe-me">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+        <section id="projects" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Projects</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
                 <!-- Project 1 -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <h3>TeamTrack – Real-Time Project Management Platform</h3>
-                        <p class="project-stack"><strong>Technology Stack:</strong> Next.js, Node.js (Express), MySQL, and Socket.IO</p>
-                        <p class="project-desc">A full-stack development project built to facilitate real-time project management.</p>
-                        <ul class="project-features">
-                            <li><strong>Authentication:</strong> Implemented JWT-based role access control for secure user management.</li>
-                            <li><strong>Dashboards & Updates:</strong> Developed project dashboards with departmental updates and notifications.</li>
-                            <li><strong>Collaboration:</strong> Enabled real-time team communication and updates using Socket.IO.</li>
-                            <li><strong>Document Management:</strong> Managed document versioning and maintained audit logs for tracking changes.</li>
-                            <li><strong>Backend:</strong> Designed RESTful APIs with MySQL optimization and modular architecture.</li>
-                            <li><strong>Version Control & Deployment:</strong> Used Git/GitHub and CI/CD pipelines for smooth development and deployment.</li>
-                            <li><strong>UI/UX:</strong> Created a responsive, interactive frontend for enhanced user experience.</li>
-                        </ul>
-                    </div>
+                <div class="glass flex flex-col p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-3">TeamTrack – Real-Time Project Management Platform</h3>
+                    <p class="text-sm mb-4 text-slate-400 text-left">
+                        <strong class="text-accent">Technology Stack:</strong> Next.js, Node.js (Express), MySQL, and Socket.IO
+                    </p>
+                    <p class="text-slate-300 mb-6 text-left leading-relaxed">
+                        A full-stack development project built to facilitate real-time project management.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mt-auto">
+                        <li><strong class="text-white">Authentication:</strong> Implemented JWT-based role access control for secure user management.</li>
+                        <li><strong class="text-white">Dashboards & Updates:</strong> Developed project dashboards with departmental updates and notifications.</li>
+                        <li><strong class="text-white">Collaboration:</strong> Enabled real-time team communication and updates using Socket.IO.</li>
+                        <li><strong class="text-white">Document Management:</strong> Managed document versioning and maintained audit logs for tracking changes.</li>
+                        <li><strong class="text-white">Backend:</strong> Designed RESTful APIs with MySQL optimization and modular architecture.</li>
+                        <li><strong class="text-white">Version Control:</strong> Used Git/GitHub and CI/CD pipelines for smooth development and deployment.</li>
+                        <li><strong class="text-white">UI/UX:</strong> Created a responsive, interactive frontend for enhanced user experience.</li>
+                    </ul>
                 </div>
+                
                 <!-- Project 2 -->
-                <div class="project-card glass">
-                    <div class="project-content">
-                        <h3>ANTI-FACE SPOOFING SYSTEM</h3>
-                        <p class="project-stack"><strong>Technology Stack:</strong> Ultralytics YOLO, OpenCV</p>
-                        <p class="project-desc">Designed and implemented an Anti-Face Spoofing System to prevent facial spoofing attempts such as printed photos or videos by analyzing live camera input.</p>
-                        <ul class="project-features">
-                            <li>Achieved high accuracy in distinguishing real faces from spoofed ones.</li>
-                            <li>Real-time detection capabilities utilizing live camera input.</li>
-                        </ul>
-                    </div>
+                <div class="glass flex flex-col p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-3">ANTI-FACE SPOOFING SYSTEM</h3>
+                    <p class="text-sm mb-4 text-slate-400 text-left">
+                        <strong class="text-accent">Technology Stack:</strong> Ultralytics YOLO, OpenCV
+                    </p>
+                    <p class="text-slate-300 mb-6 text-left leading-relaxed">
+                        Designed and implemented an Anti-Face Spoofing System to prevent facial spoofing attempts such as printed photos or videos by analyzing live camera input.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mt-auto">
+                        <li>Achieved high accuracy in distinguishing real faces from spoofed ones.</li>
+                        <li>Real-time detection capabilities utilizing live camera input.</li>
+                    </ul>
                 </div>
+
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="section about-section observe-me">
-            <h2 class="section-title">Education</h2>
-            <div class="about-grid">
-                <div class="about-card glass">
-                    <h3>Bachelor of Engineering | Computer Science</h3>
-                    <p class="highlight">Hindusthan College of Engineering and Technology</p>
-                    <p class="duration">2020 - 2024</p>
-                    <p class="cgpa">CGPA: 8.21</p>
+        <section id="education" class="section max-w-7xl mx-auto px-6 observe-me pb-12">
+            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Education</h2>
+            <div class="flex justify-center">
+                <div class="glass w-full max-w-3xl p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl text-center hover:shadow-accent/5 transition-all">
+                    <h3 class="text-2xl font-bold text-white mb-2">Bachelor of Engineering | Computer Science</h3>
+                    <p class="text-accent text-lg font-semibold mb-4">Hindusthan College of Engineering and Technology</p>
+                    <div class="flex justify-center gap-8 text-slate-300">
+                        <span><i class="fa-regular fa-calendar mr-2"></i> 2020 - 2024</span>
+                        <span class="font-bold text-white"><i class="fa-solid fa-graduation-cap mr-2"></i> CGPA: 8.21</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,18 +265,18 @@
     </main>
 
     <!-- Contact Section -->
-    <footer id="contact" class="footer">
-        <div class="footer-content observe-me">
-            <h2 class="section-title">Contact</h2>
-            <p>I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of your visions.</p>
-            <div class="contact-links">
-                <a href="mailto:suryamurugasen135@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> suryamurugasen135@gmail.com</a>
-                <a href="tel:9092436936" class="contact-btn"><i class="fa-solid fa-phone"></i> 9092436936</a>
-                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <footer id="contact" class="footer bg-darker py-16 border-t border-white/10 mt-12">
+        <div class="footer-content max-w-4xl mx-auto px-6 text-center observe-me">
+            <h2 class="section-title text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Let's Connect</h2>
+            <p class="text-slate-400 mb-10 text-lg">I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="contact-links flex flex-wrap justify-center gap-4">
+                <a href="mailto:suryamurugasen135@gmail.com" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-solid fa-envelope mr-3 text-accent group-hover:text-white transition-colors"></i> suryamurugasen135@gmail.com</a>
+                <a href="tel:9092436936" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-solid fa-phone mr-3 text-accent group-hover:text-white transition-colors"></i> 9092436936</a>
+                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-brands fa-github mr-3 text-accent group-hover:text-white transition-colors"></i> GitHub</a>
+                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-brands fa-linkedin mr-3 text-accent group-hover:text-white transition-colors"></i> LinkedIn</a>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom text-center pt-8 mt-12 border-t border-white/5 text-slate-500 text-sm">
             <p>&copy; 2026 Surya M. All Rights Reserved.</p>
         </div>
     </footer>
