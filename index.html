@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya M - Software Developer</title>
-    <meta name="description" content="Portfolio of Surya M, a Software Developer skilled in React, Java, Flutter, and Full Stack Web Development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Surya M - Software Developer | AI & Full-Stack Engineering</title>
+    <meta name="description" content="Portfolio of Surya M, Junior Software Developer at KnowledgeQ specializing in Node.js, React.js, TypeScript, Flutter, Microservices, MES, and AI/Computer Vision.">
     <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Tailwind CSS -->
@@ -33,52 +33,76 @@
 </head>
 <body class="bg-dark text-slate-200 antialiased font-sans overflow-x-hidden">
 
-    <!-- Navigation -->
-    <nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 bg-dark/80 backdrop-blur-md border-b border-white/10">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 bg-dark/90 backdrop-blur-lg border-b border-white/10">
         <div class="nav-container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="logo text-2xl font-extrabold text-white tracking-wide">SM.</a>
-            <ul class="nav-links hidden md:flex space-x-8">
+            <a href="#home" class="logo text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-gradient-to-r from-accent to-accent2 inline-block"></span>
+                Surya M.
+            </a>
+            <ul class="nav-links flex space-x-8">
                 <li><a href="#home" class="hover:text-accent font-semibold transition-colors">Home</a></li>
                 <li><a href="#about" class="hover:text-accent font-semibold transition-colors">About</a></li>
                 <li><a href="#experience" class="hover:text-accent font-semibold transition-colors">Experience</a></li>
-                <li><a href="#skills" class="hover:text-accent font-semibold transition-colors">Skills</a></li>
                 <li><a href="#projects" class="hover:text-accent font-semibold transition-colors">Projects</a></li>
+                <li><a href="#skills" class="hover:text-accent font-semibold transition-colors">Skills</a></li>
                 <li><a href="#education" class="hover:text-accent font-semibold transition-colors">Education</a></li>
                 <li><a href="#contact" class="hover:text-accent font-semibold transition-colors">Contact</a></li>
             </ul>
-            <div class="hamburger md:hidden cursor-pointer">
-                <span class="bar block w-6 h-0.5 bg-white mb-1 transition-all"></span>
-                <span class="bar block w-6 h-0.5 bg-white mb-1 transition-all"></span>
+            <div class="hamburger md:hidden cursor-pointer p-2 rounded-lg bg-white/5 border border-white/10" aria-label="Toggle Menu">
+                <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
+                <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
                 <span class="bar block w-6 h-0.5 bg-white transition-all"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero min-h-screen flex items-center justify-center pt-24 px-6 max-w-7xl mx-auto gap-12" id="home">
-        <div class="hero-content flex-1 fade-in">
-            <p class="greeting text-accent text-lg font-semibold mb-2">Hello, I'm</p>
-            <h1 class="name text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 tracking-tight">Surya M</h1>
-            <h2 class="role text-3xl md:text-4xl text-slate-400 mb-6 font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Software Developer</h2>
-            <div class="hero-actions flex flex-col sm:flex-row gap-4 mt-8">
-                <a href="#projects" class="btn btn-primary px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-accent to-accent2 shadow-[0_4px_15px_rgba(59,130,246,0.3)] hover:scale-105 transition-transform text-center">View Projects</a>
-                <a href="Surya M.pdf" download="Surya_M_Resume.pdf" class="btn btn-secondary px-8 py-3 rounded-full font-semibold text-white border-2 border-accent hover:bg-accent transition-colors text-center"><i class="fa-solid fa-download mr-2"></i> Download Resume (PDF)</a>
+    <header class="hero min-h-screen flex flex-col-reverse md:flex-row items-center justify-center pt-28 pb-12 px-6 max-w-7xl mx-auto gap-8 md:gap-12" id="home">
+        <!-- Hero Content -->
+        <div class="hero-content flex-1 fade-in text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent font-medium text-sm mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                Junior Software Developer @ KnowledgeQ
+            </div>
+            <h1 class="name text-4xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-3 tracking-tight">
+                Surya M
+            </h1>
+            <h2 class="role text-xl sm:text-2xl md:text-3xl text-slate-300 mb-6 font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent via-indigo-400 to-accent2">
+                Software Developer | AI &amp; Full-Stack Engineering
+            </h2>
+            <p class="text-slate-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                Building enterprise Manufacturing Execution System (MES) traceability platforms, React Native iOS fintech apps, RESTful microservices, and AI-powered computer vision solutions.
+            </p>
+            <div class="hero-actions flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#projects" class="btn btn-primary px-8 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-accent to-accent2 shadow-[0_4px_20px_rgba(59,130,246,0.35)] hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-laptop-code"></i> View Projects
+                </a>
+                <a href="Surya M.pdf" download="Surya_M_Resume.pdf" class="btn btn-secondary px-8 py-3.5 rounded-full font-semibold text-white border-2 border-accent/80 hover:bg-accent transition-all text-center flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-file-pdf text-red-400"></i> Download Resume (PDF)
+                </a>
             </div>
         </div>
-        <div class="hero-image-container flex-1 relative flex justify-center items-center fade-in delay-1 hidden md:flex">
-            <div class="blob-bg absolute w-96 h-96 bg-gradient-to-br from-accent to-accent2 rounded-full blur-[80px] opacity-30 animate-pulse"></div>
-            <img src="your-image.jpg" alt="Surya M" class="profile-img w-72 h-72 rounded-full object-cover z-10 border-4 border-white/10 shadow-2xl relative" onerror="this.src='https://via.placeholder.com/300x300.png?text=Surya+M'">
+
+        <!-- Profile DP Image Section (Prominently displayed on Desktop, Mobile, Android & iOS) -->
+        <div class="hero-image-container flex-1 relative flex justify-center items-center fade-in delay-1 w-full md:w-auto my-2 md:my-0">
+            <div class="blob-bg absolute w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-gradient-to-br from-accent to-accent2 rounded-full blur-[70px] opacity-40 animate-pulse"></div>
+            <div class="relative z-10 p-2 rounded-full bg-gradient-to-br from-accent/50 to-accent2/50 backdrop-blur-md shadow-2xl avatar-glow">
+                <img src="your-image.jpg" alt="Surya M - Software Developer" class="profile-img w-44 h-44 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-dark/80 shadow-2xl relative" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Surya+M&background=3b82f6&color=fff&size=256';">
+            </div>
         </div>
     </header>
 
-    <main class="space-y-24 py-12">
+    <main class="space-y-24 py-6">
         <!-- About (Professional Summary) Section -->
         <section id="about" class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Professional Summary</h2>
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Professional Summary
+            </h2>
             <div class="flex justify-center">
-                <div class="glass max-w-3xl p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-1 transition-transform duration-300">
-                    <p class="summary-text text-lg text-slate-300 leading-relaxed text-left">
-                        A motivated Computer Science graduate skilled in software development technologies, seeking to leverage my technical skills and passion for learning in a dynamic software development role to contribute to impactful projects. Experienced in building scalable <strong class="text-accent font-semibold">Microservices</strong> and delivering high-quality solutions for <strong class="text-accent font-semibold">MES (Manufacturing Execution Systems)</strong> and <strong class="text-accent font-semibold">Fintech</strong> domains.
+                <div class="glass max-w-4xl p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-1 transition-transform duration-300">
+                    <p class="summary-text text-base sm:text-lg text-slate-300 leading-relaxed text-left">
+                        Software Developer with professional experience building enterprise applications and full-stack web and mobile solutions. Currently working as a <strong class="text-accent font-semibold">Junior Software Developer at KnowledgeQ</strong>, contributing to a <strong class="text-accent font-semibold">Manufacturing Execution System (MES) Traceability</strong> application. Skilled in <strong class="text-white font-semibold">Node.js, Express.js, TypeScript, React.js, Flutter, and MySQL</strong>. Hands-on experience in AI and Computer Vision using <strong class="text-accent font-semibold">Ultralytics YOLO and OpenCV</strong>. Strong foundation in Data Structures &amp; Algorithms, Object-Oriented Programming, RESTful APIs, Microservices, and database design.
                     </p>
                 </div>
             </div>
@@ -86,198 +110,335 @@
 
         <!-- Professional Experience Section -->
         <section id="experience" class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Professional Experience</h2>
-            <div class="max-w-4xl mx-auto relative pl-8 border-l-2 border-white/10">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Professional Experience
+            </h2>
+            <div class="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-accent/40">
                 
+                <!-- KnowledgeQ Experience -->
                 <div class="timeline-item relative mb-12 group">
-                    <div class="timeline-dot absolute -left-[41px] top-6 w-4 h-4 bg-accent rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:scale-125 transition-transform duration-300"></div>
-                    <div class="glass p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl transition-all duration-300 hover:border-accent/50 hover:shadow-accent/10 hover:-translate-y-1">
-                        <h3 class="text-2xl font-bold text-white mb-2">Full Stack Web Development Training</h3>
-                        <h4 class="text-accent2 text-lg font-semibold mb-3">Qtree Technologies</h4>
-                        <span class="inline-block px-4 py-1 bg-white/5 rounded-full text-sm mb-6 text-slate-300">Duration: 6 Months</span>
-                        <ul class="list-disc pl-5 space-y-3 text-slate-300 text-left">
-                            <li>Gained hands-on experience in front-end and back-end technologies including HTML, CSS, JavaScript, and frameworks/libraries such as React.js and Node.js.</li>
-                            <li>Developed and deployed dynamic web applications following Agile practices.</li>
+                    <div class="timeline-dot absolute -left-[33px] sm:-left-[41px] top-6 w-4 h-4 bg-accent rounded-full shadow-[0_0_12px_rgba(59,130,246,0.9)] group-hover:scale-125 transition-transform duration-300"></div>
+                    <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl transition-all duration-300 hover:border-accent/50 hover:shadow-accent/10 hover:-translate-y-1">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-1">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white">Junior Software Developer</h3>
+                            <span class="inline-block px-3 py-1 bg-accent/20 border border-accent/30 text-accent font-semibold text-xs sm:text-sm rounded-full w-fit">Feb 2025 &ndash; Present</span>
+                        </div>
+                        <h4 class="text-accent2 text-lg font-semibold mb-4">KnowledgeQ, Coimbatore</h4>
+                        <p class="text-sm font-semibold text-slate-300 mb-3 underline decoration-accent/50">
+                            Manufacturing Execution System (MES) &ndash; Traceability Application
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2.5 text-slate-300 text-left text-sm sm:text-base mb-6">
+                            <li>Develop and maintain enterprise Manufacturing Execution System (MES) applications for production traceability and manufacturing workflows.</li>
+                            <li>Develop, maintain, and deploy React Native iOS applications, delivering feature enhancements, bug fixes, and App Store releases for Fintech solutions.</li>
+                            <li>Collaborate with developers, QA engineers, and business analysts following Agile development practices.</li>
                         </ul>
-                        <div class="mt-6 pt-4 border-t border-white/10 text-sm text-slate-400 text-left">
-                            <strong class="text-accent">Technologies Used:</strong> HTML, CSS, JavaScript, React.js, Node.js, Agile
+                        <div class="pt-4 border-t border-white/10 text-xs sm:text-sm text-slate-400 text-left flex flex-wrap gap-2 items-center">
+                            <strong class="text-accent mr-1">Tech Stack:</strong>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Node.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Express.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">TypeScript</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React Native</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Flutter</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">MySQL</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">REST APIs</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Git</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Xcode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qtree Technologies Experience -->
+                <div class="timeline-item relative group">
+                    <div class="timeline-dot absolute -left-[33px] sm:-left-[41px] top-6 w-4 h-4 bg-accent2 rounded-full shadow-[0_0_12px_rgba(139,92,246,0.9)] group-hover:scale-125 transition-transform duration-300"></div>
+                    <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl transition-all duration-300 hover:border-accent2/50 hover:shadow-accent2/10 hover:-translate-y-1">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-1">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white">Full Stack Web Development Trainee</h3>
+                            <span class="inline-block px-3 py-1 bg-accent2/20 border border-accent2/30 text-accent2 font-semibold text-xs sm:text-sm rounded-full w-fit">July 2024 &ndash; Dec 2024</span>
+                        </div>
+                        <h4 class="text-accent text-lg font-semibold mb-4">Qtree Technologies</h4>
+                        <ul class="list-disc pl-5 space-y-2.5 text-slate-300 text-left text-sm sm:text-base mb-6">
+                            <li>Developed responsive web applications and built RESTful APIs using React.js, Node.js, Express.js, HTML, CSS, JavaScript, and MySQL, successfully integrating frontend interfaces with backend services.</li>
+                            <li>Collaborated in Agile development teams using Git and GitHub, actively performing debugging, testing, and performance optimization.</li>
+                        </ul>
+                        <div class="pt-4 border-t border-white/10 text-xs sm:text-sm text-slate-400 text-left flex flex-wrap gap-2 items-center">
+                            <strong class="text-accent2 mr-1">Tech Stack:</strong>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Node.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Express.js</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">HTML5</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">CSS3</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">JavaScript</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">MySQL</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section (Two Separate Cards with Live Demo Coming Soon Status) -->
+        <section id="projects" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Projects
+            </h2>
+            <p class="text-center text-slate-400 mb-12 text-base">Key projects developed showcasing full-stack platform architecture and AI computer vision.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Project Card 1: TeamTrack -->
+                <div class="glass flex flex-col p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-accent/10 hover:border-accent/40 transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent/20 text-accent border border-accent/30">Full-Stack Web App</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-solid fa-code-branch mr-1"></i> Production Ready</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">TeamTrack &ndash; Real-Time Project Management Platform</h3>
+                    <p class="text-slate-300 mb-6 text-left leading-relaxed text-sm sm:text-base">
+                        Developed a full-stack project management platform with secure JWT authentication and role-based access control (RBAC).
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mb-6">
+                        <li><strong class="text-white">Authentication &amp; Security:</strong> Implemented JWT-based role access control for secure multi-department management.</li>
+                        <li><strong class="text-white">Real-Time Collaboration:</strong> Built RESTful APIs, real-time collaboration, live dashboards, notifications, and document versioning using Socket.IO.</li>
+                        <li><strong class="text-white">Backend Architecture:</strong> Designed a modular backend architecture and optimized MySQL queries for high performance.</li>
+                    </ul>
+                    <div class="mt-auto">
+                        <div class="text-xs text-slate-400 mb-4 text-left">
+                            <strong class="text-accent">Tech Stack:</strong> Next.js, Node.js, Express.js, MySQL, Socket.IO, JWT, REST APIs, Git
+                        </div>
+                        <!-- Project Action Buttons -->
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/10">
+                            <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 backdrop-blur-sm shadow-inner">
+                                <i class="fa-solid fa-clock mr-2 text-amber-400 animate-pulse"></i> Live Demo: Coming Soon
+                            </span>
+                            <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-accent text-white border border-white/15 transition-all hover:scale-105">
+                                <i class="fa-brands fa-github mr-2 text-sm"></i> GitHub Code
+                            </a>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Project Card 2: Anti-Face Spoofing System -->
+                <div class="glass flex flex-col p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-accent2/10 hover:border-accent2/40 transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent2/20 text-accent2 border border-accent2/30">AI &amp; Computer Vision</span>
+                        <span class="text-xs text-slate-400 font-mono"><i class="fa-solid fa-eye mr-1"></i> Real-Time Liveness</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Anti-Face Spoofing System &ndash; AI / Computer Vision</h3>
+                    <p class="text-slate-300 mb-6 text-left leading-relaxed text-sm sm:text-base">
+                        Developed an AI-powered anti-face spoofing system using Ultralytics YOLO and OpenCV for biometric security.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mb-6">
+                        <li><strong class="text-white">Spoof Attack Prevention:</strong> Detected presentation attacks, including printed photographs and video replay attacks, through real-time liveness detection.</li>
+                        <li><strong class="text-white">Deep Learning Pipeline:</strong> Designed an end-to-end deep learning pipeline for robust and high-accuracy face spoof detection.</li>
+                        <li><strong class="text-white">Live Camera Input:</strong> Integrated real-time video stream analysis with OpenCV and YOLO model inferencing.</li>
+                    </ul>
+                    <div class="mt-auto">
+                        <div class="text-xs text-slate-400 mb-4 text-left">
+                            <strong class="text-accent2">Tech Stack:</strong> Python, Ultralytics YOLO, OpenCV, Deep Learning
+                        </div>
+                        <!-- Project Action Buttons -->
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/10">
+                            <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 backdrop-blur-sm shadow-inner">
+                                <i class="fa-solid fa-clock mr-2 text-amber-400 animate-pulse"></i> Live Demo: Coming Soon
+                            </span>
+                            <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-accent2 text-white border border-white/15 transition-all hover:scale-105">
+                                <i class="fa-brands fa-github mr-2 text-sm"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Technical Skills Section -->
         <section id="skills" class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Technical Skills</h2>
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Technical Skills
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Skill Category 1 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-code text-accent mr-3"></i> Programming Languages</h3>
+                <!-- Category 1: Languages -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-code text-accent mr-3"></i> Languages</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Java (Advanced)</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JavaScript</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">TypeScript</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Dart</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Java</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JavaScript</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">TypeScript</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Dart</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Python</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">SQL</span>
                     </div>
                 </div>
 
-                <!-- Skill Category 2 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-brands fa-html5 text-accent mr-3"></i> Frontend</h3>
+                <!-- Category 2: Frontend & Mobile -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-mobile-screen-button text-accent mr-3"></i> Frontend &amp; Mobile</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">HTML</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">CSS</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Tailwind CSS</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">React.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Next.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">HTML5</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">CSS3</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Flutter</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React Native</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Xcode</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Android Studio</span>
                     </div>
                 </div>
 
-                <!-- Skill Category 3 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-server text-accent mr-3"></i> Backend & Architecture</h3>
+                <!-- Category 3: Backend -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-server text-accent mr-3"></i> Backend &amp; Architecture</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Node.js</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Express</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Microservices</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JDBC</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Hibernate</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">JPA</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Node.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Express.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">REST APIs</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Microservices</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JWT</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Socket.IO</span>
                     </div>
                 </div>
 
-                <!-- Skill Category 4 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-mobile-screen-button text-accent mr-3"></i> Mobile Development</h3>
+                <!-- Category 4: Databases -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-database text-accent mr-3"></i> Databases</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Flutter (Dart)</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">React Native</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Xcode</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Android Studio</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">App Store Deployment</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">MySQL</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">PostgreSQL</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Oracle</span>
                     </div>
                 </div>
 
-                <!-- Skill Category 5 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-database text-accent mr-3"></i> Databases</h3>
+                <!-- Category 5: AI & Tools -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-brain text-accent mr-3"></i> AI &amp; Tools</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">MySQL</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Oracle</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Ultralytics YOLO</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">OpenCV</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Deep Learning</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Git &amp; GitHub</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Docker</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all">Postman</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Jira</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Firebase</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Splunk</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Playwright</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Selenium</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Antigravity</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">LLM Studio</span>
                     </div>
                 </div>
 
-                <!-- Skill Category 6 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-brain text-accent mr-3"></i> AI & Quality Assurance</h3>
+                <!-- Category 6: Core Concepts -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-layer-group text-accent mr-3"></i> Core Concepts</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">LLMs</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Claude</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Antigravity</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Ultralytics YOLO</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">OpenCV</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Playwright</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Selenium</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">OOP</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">DSA</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Database Design</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">CI/CD</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Agile/Scrum</span>
                     </div>
-                </div>
-
-                <!-- Skill Category 7 -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 hover:border-accent/30 transition-colors md:col-span-2 lg:col-span-3">
-                    <h3 class="text-xl font-bold text-white mb-6 flex items-center"><i class="fa-solid fa-screwdriver-wrench text-accent mr-3"></i> Tools & Technologies</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Git</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">GitHub</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Docker</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Postman</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Splunk</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Jira</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Firebase</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">CI/CD</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Playwright</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Selenium</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">Antigravity</span>
-                        <span class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all cursor-default">LLM Studio</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Projects</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                
-                <!-- Project 1 -->
-                <div class="glass flex flex-col p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-3">TeamTrack – Real-Time Project Management Platform</h3>
-                    <p class="text-sm mb-4 text-slate-400 text-left">
-                        <strong class="text-accent">Technology Stack:</strong> Next.js, Node.js (Express), MySQL, and Socket.IO
-                    </p>
-                    <p class="text-slate-300 mb-6 text-left leading-relaxed">
-                        A full-stack development project built to facilitate real-time project management.
-                    </p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mt-auto">
-                        <li><strong class="text-white">Authentication:</strong> Implemented JWT-based role access control for secure user management.</li>
-                        <li><strong class="text-white">Dashboards & Updates:</strong> Developed project dashboards with departmental updates and notifications.</li>
-                        <li><strong class="text-white">Collaboration:</strong> Enabled real-time team communication and updates using Socket.IO.</li>
-                        <li><strong class="text-white">Document Management:</strong> Managed document versioning and maintained audit logs for tracking changes.</li>
-                        <li><strong class="text-white">Backend:</strong> Designed RESTful APIs with MySQL optimization and modular architecture.</li>
-                        <li><strong class="text-white">Version Control:</strong> Used Git/GitHub and CI/CD pipelines for smooth development and deployment.</li>
-                        <li><strong class="text-white">UI/UX:</strong> Created a responsive, interactive frontend for enhanced user experience.</li>
-                    </ul>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="glass flex flex-col p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-3">ANTI-FACE SPOOFING SYSTEM</h3>
-                    <p class="text-sm mb-4 text-slate-400 text-left">
-                        <strong class="text-accent">Technology Stack:</strong> Ultralytics YOLO, OpenCV
-                    </p>
-                    <p class="text-slate-300 mb-6 text-left leading-relaxed">
-                        Designed and implemented an Anti-Face Spoofing System to prevent facial spoofing attempts such as printed photos or videos by analyzing live camera input.
-                    </p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mt-auto">
-                        <li>Achieved high accuracy in distinguishing real faces from spoofed ones.</li>
-                        <li>Real-time detection capabilities utilizing live camera input.</li>
-                    </ul>
                 </div>
 
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="section max-w-7xl mx-auto px-6 observe-me pb-12">
-            <h2 class="section-title text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Education</h2>
-            <div class="flex justify-center">
-                <div class="glass w-full max-w-3xl p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/5 shadow-xl text-center hover:shadow-accent/5 transition-all">
-                    <h3 class="text-2xl font-bold text-white mb-2">Bachelor of Engineering | Computer Science</h3>
-                    <p class="text-accent text-lg font-semibold mb-4">Hindusthan College of Engineering and Technology</p>
-                    <div class="flex justify-center gap-8 text-slate-300">
-                        <span><i class="fa-regular fa-calendar mr-2"></i> 2020 - 2024</span>
-                        <span class="font-bold text-white"><i class="fa-solid fa-graduation-cap mr-2"></i> CGPA: 8.21</span>
+        <section id="education" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Education
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                
+                <!-- Degree -->
+                <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:border-accent/30 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-1">
+                        <h3 class="text-xl font-bold text-white">B.E. &ndash; Computer Science &amp; Engineering</h3>
+                        <span class="text-accent font-semibold text-sm">CGPA: 8.21 / 10 &nbsp;|&nbsp; 2020 &ndash; 2024</span>
+                    </div>
+                    <p class="text-slate-300 font-medium">Hindusthan College of Engineering and Technology, Coimbatore</p>
+                </div>
+
+                <!-- HSC & SSLC Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/30 transition-all">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold text-white">HSC (Class XII)</h4>
+                            <span class="text-emerald-400 font-semibold text-sm">69% &nbsp;|&nbsp; 2019 &ndash; 2020</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">AKKV Aarunadu Matric Higher Secondary School, Trichy</p>
+                    </div>
+
+                    <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/30 transition-all">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold text-white">SSLC (Class X)</h4>
+                            <span class="text-emerald-400 font-semibold text-sm">79% &nbsp;|&nbsp; 2017 &ndash; 2018</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">Vaasavi Vidyalaya School, Trichy</p>
                     </div>
                 </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Certifications
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-certificate text-accent text-2xl"></i>
+                        <h3 class="text-xl font-bold text-white">Full Stack Web Development Training</h3>
+                    </div>
+                    <p class="text-accent2 font-semibold text-sm mb-3">Qtree Technologies (6 months)</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Hands-on intensive training in HTML, CSS, JavaScript, React.js, Node.js, Express.js, MySQL, RESTful APIs, Git, and Agile software development workflows.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strengths & Soft Skills Section -->
+        <section class="section max-w-7xl mx-auto px-6 observe-me pb-6">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Strengths &amp; Soft Skills
+            </h2>
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-puzzle-piece text-accent mr-2"></i>Problem Solving</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-chart-simple text-accent mr-2"></i>Analytical Thinking</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-users text-accent mr-2"></i>Team Collaboration</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-comments text-accent mr-2"></i>Communication Skills</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bolt text-accent mr-2"></i>Adaptability &amp; Quick Learning</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-clock text-accent mr-2"></i>Time Management</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bullseye text-accent mr-2"></i>Attention to Detail</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-code text-accent mr-2"></i>Clean Code Practices</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-arrows-spin text-accent mr-2"></i>Agile Development</span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bug-slash text-accent mr-2"></i>Debugging &amp; Troubleshooting</span>
             </div>
         </section>
 
     </main>
 
-    <!-- Contact Section -->
+    <!-- Contact Footer Section -->
     <footer id="contact" class="footer bg-darker py-16 border-t border-white/10 mt-12">
         <div class="footer-content max-w-4xl mx-auto px-6 text-center observe-me">
-            <h2 class="section-title text-4xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Let's Connect</h2>
-            <p class="text-slate-400 mb-10 text-lg">I'm always open to discussing new opportunities, creative ideas, or opportunities to be part of your visions.</p>
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Let's Connect
+            </h2>
+            <p class="text-slate-400 mb-8 text-base sm:text-lg">Open to software developer roles, full-stack &amp; mobile engineering projects, or technical collaboration.</p>
             <div class="contact-links flex flex-wrap justify-center gap-4">
-                <a href="mailto:suryamurugasen135@gmail.com" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-solid fa-envelope mr-3 text-accent group-hover:text-white transition-colors"></i> suryamurugasen135@gmail.com</a>
-                <a href="tel:9092436936" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-solid fa-phone mr-3 text-accent group-hover:text-white transition-colors"></i> 9092436936</a>
-                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-brands fa-github mr-3 text-accent group-hover:text-white transition-colors"></i> GitHub</a>
-                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group"><i class="fa-brands fa-linkedin mr-3 text-accent group-hover:text-white transition-colors"></i> LinkedIn</a>
+                <a href="mailto:suryamurugasen135@gmail.com" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-solid fa-envelope mr-3 text-accent group-hover:text-white transition-colors"></i> suryamurugasen135@gmail.com</a>
+                <a href="tel:9092436936" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-solid fa-phone mr-3 text-accent group-hover:text-white transition-colors"></i> 9092436936</a>
+                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-brands fa-github mr-3 text-accent group-hover:text-white transition-colors"></i> GitHub</a>
+                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-brands fa-linkedin mr-3 text-accent group-hover:text-white transition-colors"></i> LinkedIn</a>
             </div>
         </div>
         <div class="footer-bottom text-center pt-8 mt-12 border-t border-white/5 text-slate-500 text-sm">
-            <p>&copy; 2026 Surya M. All Rights Reserved.</p>
+            <p>&copy; 2026 Surya M. Software Developer. All Rights Reserved.</p>
         </div>
     </footer>
 

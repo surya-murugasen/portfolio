@@ -1,10 +1,14 @@
 /* =======================================
-   Custom Animations
+   Custom Animations & Mobile Navigation
    ======================================= */
+html {
+    scroll-behavior: smooth;
+}
+
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(25px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in.appear {
@@ -13,10 +17,62 @@
 }
 
 .delay-1 {
-    transition-delay: 0.2s;
+    transition-delay: 0.15s;
 }
 
-/* Base custom styles to support Tailwind */
-html {
-    scroll-behavior: smooth;
+.delay-2 {
+    transition-delay: 0.3s;
+}
+
+/* Glowing Profile Avatar Animation */
+@keyframes floatGlow {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.4), 0 0 50px rgba(139, 92, 246, 0.2);
+    }
+    50% {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 0 35px rgba(59, 130, 246, 0.6), 0 0 70px rgba(139, 92, 246, 0.35);
+    }
+}
+
+.avatar-glow {
+    animation: floatGlow 5s ease-in-out infinite;
+}
+
+/* Mobile Navigation Styles for iOS & Android */
+@media (max-width: 767px) {
+    .nav-links {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 65px);
+        background-color: rgba(11, 15, 25, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2.5rem;
+        gap: 1.75rem;
+        transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 40;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
 }
