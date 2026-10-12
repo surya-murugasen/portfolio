@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Surya M - Software Developer | AI & Full-Stack Engineering</title>
-    <meta name="description" content="Portfolio of Surya M, Junior Software Developer at KnowledgeQ specializing in Node.js, React.js, TypeScript, Flutter, Microservices, MES, and AI/Computer Vision.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya M | Software Developer — Node.js, TypeScript, React, Flutter, MES & AI</title>
+    <meta name="description" content="Portfolio of Surya M, Software Developer specializing in Node.js, TypeScript, Express, MySQL relational design, React, Flutter, enterprise MES Traceability systems, and AI Computer Vision.">
+    <meta name="author" content="Surya M">
+    <meta name="theme-color" content="#0b0f19">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://surya-murugasen-portfolio-5f4d33.netlify.app">
+
+    <!-- Open Graph / Facebook / LinkedIn Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surya-murugasen-portfolio-5f4d33.netlify.app">
+    <meta property="og:title" content="Surya M | Software Developer — Backend, Mobile & Applied AI">
+    <meta property="og:description" content="Explore verified projects, architectural case studies, and engineering capabilities across Node.js, TypeScript, MySQL, Flutter, and Manufacturing Execution Systems.">
+    <meta property="og:image" content="your-image.jpg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Surya M | Software Developer">
+    <meta name="twitter:description" content="Software Developer specializing in Node.js, TypeScript, MySQL, React, Flutter, and MES Traceability platforms.">
+    <meta name="twitter:image" content="your-image.jpg">
+
+    <!-- SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b0f19'/><text x='16' y='21' font-size='15' font-family='sans-serif' font-weight='800' fill='%233b82f6' text-anchor='middle'>&lt;/&gt;</text></svg>">
+
     <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -33,76 +59,137 @@
 </head>
 <body class="bg-dark text-slate-200 antialiased font-sans overflow-x-hidden">
 
+    <!-- Accessible Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation Bar -->
-    <nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 bg-dark/90 backdrop-blur-lg border-b border-white/10">
-        <div class="nav-container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="logo text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-gradient-to-r from-accent to-accent2 inline-block"></span>
-                Surya M.
-            </a>
-            <ul class="nav-links flex space-x-8">
-                <li><a href="#home" class="hover:text-accent font-semibold transition-colors">Home</a></li>
-                <li><a href="#about" class="hover:text-accent font-semibold transition-colors">About</a></li>
-                <li><a href="#experience" class="hover:text-accent font-semibold transition-colors">Experience</a></li>
-                <li><a href="#projects" class="hover:text-accent font-semibold transition-colors">Projects</a></li>
-                <li><a href="#skills" class="hover:text-accent font-semibold transition-colors">Skills</a></li>
-                <li><a href="#education" class="hover:text-accent font-semibold transition-colors">Education</a></li>
-                <li><a href="#contact" class="hover:text-accent font-semibold transition-colors">Contact</a></li>
-            </ul>
-            <div class="hamburger md:hidden cursor-pointer p-2 rounded-lg bg-white/5 border border-white/10" aria-label="Toggle Menu">
-                <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
-                <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
-                <span class="bar block w-6 h-0.5 bg-white transition-all"></span>
+    <header>
+        <nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 bg-dark/95 backdrop-blur-lg border-b border-white/10" aria-label="Main Navigation">
+            <div class="nav-container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#home" class="logo text-2xl font-extrabold text-white tracking-wide flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-accent rounded-lg p-1">
+                    <span class="w-3 h-3 rounded-full bg-gradient-to-r from-accent to-accent2 inline-block"></span>
+                    Surya M.
+                </a>
+                <ul class="nav-links flex space-x-8" id="primary-nav">
+                    <li><a href="#home" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Home</a></li>
+                    <li><a href="#about" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">About</a></li>
+                    <li><a href="#experience" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Projects</a></li>
+                    <li><a href="#case-studies" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Case Studies</a></li>
+                    <li><a href="#skills" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Skills</a></li>
+                    <li><a href="#education" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Education</a></li>
+                    <li><a href="#contact" class="hover:text-accent font-semibold transition-colors focus-visible:text-accent">Contact</a></li>
+                </ul>
+                <button class="hamburger md:hidden cursor-pointer p-2 rounded-lg bg-white/5 border border-white/10 focus-visible:ring-2 focus-visible:ring-accent" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
+                    <span class="bar block w-6 h-0.5 bg-white mb-1.5 transition-all"></span>
+                    <span class="bar block w-6 h-0.5 bg-white transition-all"></span>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <header class="hero min-h-screen flex flex-col-reverse md:flex-row items-center justify-center pt-28 pb-12 px-6 max-w-7xl mx-auto gap-8 md:gap-12" id="home">
+    <section class="hero min-h-screen flex flex-col-reverse md:flex-row items-center justify-center pt-28 pb-12 px-6 max-w-7xl mx-auto gap-8 md:gap-12" id="home">
         <!-- Hero Content -->
         <div class="hero-content flex-1 fade-in text-center md:text-left">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent font-medium text-sm mb-4">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                Junior Software Developer @ KnowledgeQ
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Junior Software Developer @ KnowledgeQ (Active)
             </div>
             <h1 class="name text-4xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-3 tracking-tight">
                 Surya M
             </h1>
-            <h2 class="role text-xl sm:text-2xl md:text-3xl text-slate-300 mb-6 font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent via-indigo-400 to-accent2">
-                Software Developer | AI &amp; Full-Stack Engineering
-            </h2>
-            <p class="text-slate-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-                Building enterprise Manufacturing Execution System (MES) traceability platforms, React Native iOS fintech apps, RESTful microservices, and AI-powered computer vision solutions.
+            <p class="role text-xl sm:text-2xl md:text-3xl text-slate-300 mb-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent via-indigo-400 to-accent2">
+                Software Developer | Full-Stack &amp; Systems Engineering
             </p>
-            <div class="hero-actions flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#projects" class="btn btn-primary px-8 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-accent to-accent2 shadow-[0_4px_20px_rgba(59,130,246,0.35)] hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-laptop-code"></i> View Projects
+            <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                Building reliable Node.js/TypeScript backend architectures, relational MySQL schemas, and cross-platform apps in React &amp; Flutter. Experienced in enterprise Manufacturing Execution System (MES) traceability workflows, real-time collaboration engines, and applied computer vision with Ultralytics YOLO &amp; OpenCV.
+            </p>
+            <div class="hero-actions flex flex-wrap gap-4 justify-center md:justify-start">
+                <a href="#projects" class="btn btn-primary px-7 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-accent to-accent2 shadow-[0_4px_20px_rgba(59,130,246,0.35)] hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-code-branch"></i> Explore Projects
                 </a>
-                <a href="Surya M.pdf" download="Surya_M_Resume.pdf" class="btn btn-secondary px-8 py-3.5 rounded-full font-semibold text-white border-2 border-accent/80 hover:bg-accent transition-all text-center flex items-center justify-center gap-2 shadow-lg">
+                <a href="#case-studies" class="px-7 py-3 rounded-full font-semibold text-white bg-slate-800/80 border border-white/20 hover:border-accent hover:bg-slate-700/80 transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-code text-accent"></i> Architecture Case Studies
+                </a>
+                <a href="Surya_M_Resume.pdf" download="Surya_M_Resume.pdf" class="btn btn-secondary px-7 py-3 rounded-full font-semibold text-white border-2 border-accent/80 hover:bg-accent transition-all text-center flex items-center justify-center gap-2 shadow-lg">
                     <i class="fa-solid fa-file-pdf text-red-400"></i> Download Resume (PDF)
+                </a>
+                <a href="resume.html" target="_blank" class="px-5 py-3 rounded-full font-semibold text-slate-300 hover:text-white border border-white/10 hover:border-white/30 transition-all text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> Web Resume
                 </a>
             </div>
         </div>
 
-        <!-- Profile DP Image Section (Prominently displayed on Desktop, Mobile, Android & iOS) -->
+        <!-- Profile DP Image Section -->
         <div class="hero-image-container flex-1 relative flex justify-center items-center fade-in delay-1 w-full md:w-auto my-2 md:my-0">
             <div class="blob-bg absolute w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-gradient-to-br from-accent to-accent2 rounded-full blur-[70px] opacity-40 animate-pulse"></div>
             <div class="relative z-10 p-2 rounded-full bg-gradient-to-br from-accent/50 to-accent2/50 backdrop-blur-md shadow-2xl avatar-glow">
-                <img src="your-image.jpg" alt="Surya M - Software Developer" class="profile-img w-44 h-44 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-dark/80 shadow-2xl relative" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Surya+M&background=3b82f6&color=fff&size=256';">
+                <img src="your-image.jpg" alt="Surya M - Software Developer Profile Photo" width="288" height="288" class="profile-img w-44 h-44 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-dark/80 shadow-2xl relative" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Surya+M&background=3b82f6&color=fff&size=256';">
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="space-y-24 py-6">
-        <!-- About (Professional Summary) Section -->
+    <main id="main-content" class="space-y-24 py-6">
+        <!-- About (Professional Summary & Engineering Focus) Section -->
         <section id="about" class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Professional Summary
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Engineering Positioning &amp; Summary
             </h2>
-            <div class="flex justify-center">
-                <div class="glass max-w-4xl p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-1 transition-transform duration-300">
-                    <p class="summary-text text-base sm:text-lg text-slate-300 leading-relaxed text-left">
-                        Software Developer with professional experience building enterprise applications and full-stack web and mobile solutions. Currently working as a <strong class="text-accent font-semibold">Junior Software Developer at KnowledgeQ</strong>, contributing to a <strong class="text-accent font-semibold">Manufacturing Execution System (MES) Traceability</strong> application. Skilled in <strong class="text-white font-semibold">Node.js, Express.js, TypeScript, React.js, Flutter, and MySQL</strong>. Hands-on experience in AI and Computer Vision using <strong class="text-accent font-semibold">Ultralytics YOLO and OpenCV</strong>. Strong foundation in Data Structures &amp; Algorithms, Object-Oriented Programming, RESTful APIs, Microservices, and database design.
+            <p class="text-center text-slate-400 mb-10 text-base max-w-2xl mx-auto">
+                Practical experience delivering robust server-side APIs, structured database transactions, and client-facing interfaces.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Summary Card -->
+                <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl md:col-span-2">
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed text-left">
+                        Software Developer with proven experience building enterprise systems and full-stack solutions. Currently working as a <strong class="text-accent font-semibold">Junior Software Developer at KnowledgeQ</strong>, contributing to a <strong class="text-accent font-semibold">Manufacturing Execution System (MES) Traceability</strong> application that tracks production lots and station validations. Skilled in <strong class="text-white font-semibold">Node.js, Express.js, TypeScript, MySQL, React.js, and Flutter</strong>. Implemented hands-on AI/Computer Vision solutions using <strong class="text-accent2 font-semibold">Ultralytics YOLO and OpenCV</strong> for anti-spoofing biometrics. Solid grounding in Data Structures, Object-Oriented Design, RESTful architecture, and database query optimization.
+                    </p>
+                </div>
+
+                <!-- Pillar 1: Backend & Systems -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent"><i class="fa-solid fa-server"></i></span>
+                        <h3 class="text-lg font-bold text-white">Backend &amp; API Architecture</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Design modular Node.js/Express and TypeScript microservices with clean controller-service layers, secure HMAC/JWT authentication, validation middleware, and structured error responses.
+                    </p>
+                </div>
+
+                <!-- Pillar 2: Relational Databases -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400"><i class="fa-solid fa-database"></i></span>
+                        <h3 class="text-lg font-bold text-white">Relational Data &amp; Traceability</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Design normalized MySQL and SQLite schemas with referential integrity, indexes for fast query performance, audit history tracking, and transactional safety for manufacturing state machines.
+                    </p>
+                </div>
+
+                <!-- Pillar 3: Web & Mobile Engineering -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-400"><i class="fa-solid fa-mobile-screen"></i></span>
+                        <h3 class="text-lg font-bold text-white">Web &amp; Mobile Clients</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Build responsive React dashboards with real-time WebSocket feeds and cross-platform mobile apps with Flutter and React Native iOS for fintech and operational tooling.
+                    </p>
+                </div>
+
+                <!-- Pillar 4: Applied Computer Vision -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400"><i class="fa-solid fa-eye"></i></span>
+                        <h3 class="text-lg font-bold text-white">Applied AI &amp; Vision Pipelines</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Train and deploy custom YOLO object detection models with OpenCV pipelines, streaming webcam video frames over WebSockets for millisecond biometric attack classification.
                     </p>
                 </div>
             </div>
@@ -124,26 +211,27 @@
                             <span class="inline-block px-3 py-1 bg-accent/20 border border-accent/30 text-accent font-semibold text-xs sm:text-sm rounded-full w-fit">Feb 2025 &ndash; Present</span>
                         </div>
                         <h4 class="text-accent2 text-lg font-semibold mb-4">KnowledgeQ, Coimbatore</h4>
-                        <p class="text-sm font-semibold text-slate-300 mb-3 underline decoration-accent/50">
-                            Manufacturing Execution System (MES) &ndash; Traceability Application
-                        </p>
+                        <div class="inline-block px-3 py-1 mb-4 rounded-lg bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
+                            Domain: Manufacturing Execution Systems (MES) &amp; Fintech Mobile
+                        </div>
                         <ul class="list-disc pl-5 space-y-2.5 text-slate-300 text-left text-sm sm:text-base mb-6">
-                            <li>Develop and maintain enterprise Manufacturing Execution System (MES) applications for production traceability and manufacturing workflows.</li>
-                            <li>Develop, maintain, and deploy React Native iOS applications, delivering feature enhancements, bug fixes, and App Store releases for Fintech solutions.</li>
-                            <li>Collaborate with developers, QA engineers, and business analysts following Agile development practices.</li>
+                            <li>Develop and maintain backend services and workflows for an enterprise Manufacturing Execution System (MES) application providing production-line traceability and station audit tracking.</li>
+                            <li>Develop, maintain, and support React Native iOS applications, delivering features, defect resolution, and App Store builds for Fintech clients.</li>
+                            <li>Engineer robust RESTful APIs in Node.js, Express, and TypeScript connected to relational MySQL databases for high-integrity transactions.</li>
+                            <li>Collaborate closely with QA engineers, developers, and solution architects using Agile/Scrum sprints, Git branch workflows, and code reviews.</li>
                         </ul>
                         <div class="pt-4 border-t border-white/10 text-xs sm:text-sm text-slate-400 text-left flex flex-wrap gap-2 items-center">
-                            <strong class="text-accent mr-1">Tech Stack:</strong>
+                            <strong class="text-accent mr-1">Verified Technologies:</strong>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Node.js</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Express.js</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">TypeScript</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React.js</span>
-                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React Native</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">React Native (iOS)</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Flutter</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">MySQL</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">REST APIs</span>
-                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Git</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Xcode</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Git</span>
                         </div>
                     </div>
                 </div>
@@ -158,8 +246,9 @@
                         </div>
                         <h4 class="text-accent text-lg font-semibold mb-4">Qtree Technologies</h4>
                         <ul class="list-disc pl-5 space-y-2.5 text-slate-300 text-left text-sm sm:text-base mb-6">
-                            <li>Developed responsive web applications and built RESTful APIs using React.js, Node.js, Express.js, HTML, CSS, JavaScript, and MySQL, successfully integrating frontend interfaces with backend services.</li>
-                            <li>Collaborated in Agile development teams using Git and GitHub, actively performing debugging, testing, and performance optimization.</li>
+                            <li>Completed comprehensive full-stack engineering program developing full-stack web applications and REST APIs using React.js, Node.js, Express.js, and MySQL.</li>
+                            <li>Designed normalized relational database schemas, query optimization, input validation, and secure authentication flows with JWT and password hashing.</li>
+                            <li>Collaborated in Agile development teams utilizing Git and GitHub, performing testing, debugging, and cross-browser responsiveness tuning.</li>
                         </ul>
                         <div class="pt-4 border-t border-white/10 text-xs sm:text-sm text-slate-400 text-left flex flex-wrap gap-2 items-center">
                             <strong class="text-accent2 mr-1">Tech Stack:</strong>
@@ -168,9 +257,9 @@
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Express.js</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">HTML5</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">CSS3</span>
-                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">JavaScript</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">JavaScript (ES6+)</span>
                             <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">MySQL</span>
-                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Agile</span>
+                            <span class="px-2.5 py-1 bg-white/5 rounded-md text-slate-300 border border-white/5">Git</span>
                         </div>
                     </div>
                 </div>
@@ -178,84 +267,202 @@
             </div>
         </section>
 
-        <!-- Projects Section (Two Separate Cards with Live Demo Coming Soon Status) -->
+        <!-- Projects Section (Demonstrable Engineering Evidence) -->
         <section id="projects" class="section max-w-7xl mx-auto px-6 observe-me">
             <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Projects
+                Demonstrated Projects &amp; Implementations
             </h2>
-            <p class="text-center text-slate-400 mb-12 text-base">Key projects developed showcasing full-stack platform architecture and AI computer vision.</p>
+            <p class="text-center text-slate-400 mb-12 text-base max-w-3xl mx-auto">
+                Each project represents actual written source code, tested architectures, and verified capabilities. Inspect source repositories or view complete architectural case studies.
+            </p>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
                 <!-- Project Card 1: TeamTrack -->
                 <div class="glass flex flex-col p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-accent/10 hover:border-accent/40 transition-all duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent/20 text-accent border border-accent/30">Full-Stack Web App</span>
-                        <span class="text-xs text-slate-400 font-mono"><i class="fa-solid fa-code-branch mr-1"></i> Production Ready</span>
+                    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent/20 text-accent border border-accent/30">
+                            Full-Stack Web &amp; API Platform
+                        </span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono">
+                            <i class="fa-solid fa-code mr-1.5 text-xs"></i> Source Available
+                        </span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">TeamTrack &ndash; Real-Time Project Management Platform</h3>
-                    <p class="text-slate-300 mb-6 text-left leading-relaxed text-sm sm:text-base">
-                        Developed a full-stack project management platform with secure JWT authentication and role-based access control (RBAC).
+                    <h3 class="text-2xl font-bold text-white mb-2">TeamTrack &ndash; Real-Time Project Management Platform</h3>
+                    <p class="text-slate-300 mb-4 text-left leading-relaxed text-sm sm:text-base">
+                        Collaborative project tracking system engineered to eliminate asynchronous delays in sprint execution through event-driven WebSockets, server-to-server HMAC security, and transactional MySQL storage.
                     </p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mb-6">
-                        <li><strong class="text-white">Authentication &amp; Security:</strong> Implemented JWT-based role access control for secure multi-department management.</li>
-                        <li><strong class="text-white">Real-Time Collaboration:</strong> Built RESTful APIs, real-time collaboration, live dashboards, notifications, and document versioning using Socket.IO.</li>
-                        <li><strong class="text-white">Backend Architecture:</strong> Designed a modular backend architecture and optimized MySQL queries for high performance.</li>
-                    </ul>
+                    <div class="space-y-3 mb-6 text-slate-300 text-left text-sm">
+                        <div class="bg-white/5 p-3 rounded-xl border border-white/5">
+                            <strong class="text-white block mb-1"><i class="fa-solid fa-user-gear text-accent mr-2"></i>My Core Contribution:</strong>
+                            Engineered modular Express.js / TypeScript REST API layer, HMAC-SHA256 inter-service authentication middleware (<code class="text-accent text-xs">hmacAuth.ts</code>), WebSocket room multiplexing with Socket.IO, and normalized relational MySQL models.
+                        </div>
+                        <ul class="list-disc pl-5 space-y-1.5 text-slate-300 text-xs sm:text-sm">
+                            <li><strong class="text-white">Security &amp; RBAC:</strong> Dual-layer authentication with user JWT tokens for client access and HMAC signature verification for automated admin integration.</li>
+                            <li><strong class="text-white">Real-Time Sync:</strong> Sub-second task status broadcasts and notifications without client polling overhead.</li>
+                            <li><strong class="text-white">Database Optimization:</strong> Foreign-key constrained schemas with indexing on active sprint and assignment queries.</li>
+                        </ul>
+                    </div>
                     <div class="mt-auto">
                         <div class="text-xs text-slate-400 mb-4 text-left">
-                            <strong class="text-accent">Tech Stack:</strong> Next.js, Node.js, Express.js, MySQL, Socket.IO, JWT, REST APIs, Git
+                            <strong class="text-accent">Technology Stack:</strong> Next.js / React, Node.js, Express.js, TypeScript, MySQL (Sequelize), Socket.IO, JWT, HMAC-SHA256, Git
                         </div>
                         <!-- Project Action Buttons -->
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/10">
-                            <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 backdrop-blur-sm shadow-inner">
-                                <i class="fa-solid fa-clock mr-2 text-amber-400 animate-pulse"></i> Live Demo: Coming Soon
-                            </span>
-                            <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-accent text-white border border-white/15 transition-all hover:scale-105">
-                                <i class="fa-brands fa-github mr-2 text-sm"></i> GitHub Code
+                            <button data-case-study-target="modal-teamtrack" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-accent/20 hover:bg-accent text-accent hover:text-white border border-accent/40 transition-all hover:scale-105">
+                                <i class="fa-solid fa-file-lines mr-2"></i> Read Technical Case Study
+                            </button>
+                            <a href="https://github.com/surya-murugasen/TeamTrack_-_Real-Time_Project_Management_Platform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/15 transition-all hover:scale-105">
+                                <i class="fa-brands fa-github mr-2 text-sm"></i> Inspect GitHub Repository
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Project Card 2: Anti-Face Spoofing System -->
+                <!-- Project Card 2: VisionGuard AI -->
                 <div class="glass flex flex-col p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-accent2/10 hover:border-accent2/40 transition-all duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent2/20 text-accent2 border border-accent2/30">AI &amp; Computer Vision</span>
-                        <span class="text-xs text-slate-400 font-mono"><i class="fa-solid fa-eye mr-1"></i> Real-Time Liveness</span>
+                    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-accent2/20 text-accent2 border border-accent2/30">
+                            Applied AI &amp; Computer Vision System
+                        </span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono">
+                            <i class="fa-solid fa-code mr-1.5 text-xs"></i> Source Available
+                        </span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Anti-Face Spoofing System &ndash; AI / Computer Vision</h3>
-                    <p class="text-slate-300 mb-6 text-left leading-relaxed text-sm sm:text-base">
-                        Developed an AI-powered anti-face spoofing system using Ultralytics YOLO and OpenCV for biometric security.
+                    <h3 class="text-2xl font-bold text-white mb-2">VisionGuard AI &ndash; Enterprise Anti-Face Spoofing System</h3>
+                    <p class="text-slate-300 mb-4 text-left leading-relaxed text-sm sm:text-base">
+                        End-to-end 3-tier presentation attack detection system protecting biometric verification pipelines from fraudulent paper photo printouts and digital video replay attacks.
                     </p>
-                    <ul class="list-disc pl-5 space-y-2 text-slate-300 text-left text-sm mb-6">
-                        <li><strong class="text-white">Spoof Attack Prevention:</strong> Detected presentation attacks, including printed photographs and video replay attacks, through real-time liveness detection.</li>
-                        <li><strong class="text-white">Deep Learning Pipeline:</strong> Designed an end-to-end deep learning pipeline for robust and high-accuracy face spoof detection.</li>
-                        <li><strong class="text-white">Live Camera Input:</strong> Integrated real-time video stream analysis with OpenCV and YOLO model inferencing.</li>
-                    </ul>
+                    <div class="space-y-3 mb-6 text-slate-300 text-left text-sm">
+                        <div class="bg-white/5 p-3 rounded-xl border border-white/5">
+                            <strong class="text-white block mb-1"><i class="fa-solid fa-brain text-accent2 mr-2"></i>My Core Contribution:</strong>
+                            Trained and fine-tuned YOLO computer vision model on curated Real vs Spoof datasets; constructed Python Flask-SocketIO streaming microservice with OpenCV frame processing; integrated Vite React webcam frontend and Node.js audit backend.
+                        </div>
+                        <ul class="list-disc pl-5 space-y-1.5 text-slate-300 text-xs sm:text-sm">
+                            <li><strong class="text-white">Liveness Inferencing:</strong> Processes webcam video frames over WebSockets, drawing real-time bounding boxes with confidence scores.</li>
+                            <li><strong class="text-white">Bandwidth Optimization:</strong> Throttled capture pipeline to 3 FPS per client to prevent GPU memory saturation while preserving liveness security.</li>
+                            <li><strong class="text-white">Audit &amp; Reporting:</strong> Asynchronously stores verification logs and spoof attempt metrics in SQLite for administrative review.</li>
+                        </ul>
+                    </div>
                     <div class="mt-auto">
                         <div class="text-xs text-slate-400 mb-4 text-left">
-                            <strong class="text-accent2">Tech Stack:</strong> Python, Ultralytics YOLO, OpenCV, Deep Learning
+                            <strong class="text-accent2">Technology Stack:</strong> Python, Ultralytics YOLOv11/v8, OpenCV, Flask-SocketIO, Node.js, Express.js, React (Vite), SQLite / Sequelize
                         </div>
                         <!-- Project Action Buttons -->
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/10">
-                            <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 backdrop-blur-sm shadow-inner">
-                                <i class="fa-solid fa-clock mr-2 text-amber-400 animate-pulse"></i> Live Demo: Coming Soon
-                            </span>
-                            <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-accent2 text-white border border-white/15 transition-all hover:scale-105">
-                                <i class="fa-brands fa-github mr-2 text-sm"></i> GitHub Code
+                            <button data-case-study-target="modal-visionguard" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-accent2/20 hover:bg-accent2 text-accent2 hover:text-white border border-accent2/40 transition-all hover:scale-105">
+                                <i class="fa-solid fa-file-lines mr-2"></i> Read Technical Case Study
+                            </button>
+                            <a href="https://github.com/surya-murugasen/AI-powered_Enterprise_Anti-Face_Spoofing_System" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/15 transition-all hover:scale-105">
+                                <i class="fa-brands fa-github mr-2 text-sm"></i> Inspect GitHub Repository
                             </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Project Card 3: MES Traceability (Sanitized Industrial Case Study) -->
+                <div class="glass flex flex-col p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-cyan-500/10 hover:border-cyan-500/40 transition-all duration-300 lg:col-span-2">
+                    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                            Enterprise Industrial Systems &bull; KnowledgeQ
+                        </span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30 font-mono">
+                            <i class="fa-solid fa-shield-halved mr-1.5 text-xs"></i> Enterprise Production &bull; Sanitized Case Study
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="lg:col-span-2">
+                            <h3 class="text-2xl font-bold text-white mb-2">Manufacturing Execution System (MES) &ndash; Traceability Platform</h3>
+                            <p class="text-slate-300 mb-4 text-left leading-relaxed text-sm sm:text-base">
+                                Industrial software platform designed to manage shop-floor work-in-progress (WIP), enforce sequential station manufacturing constraints, and provide end-to-end component traceability across assembly lines.
+                            </p>
+                            <div class="space-y-3 mb-4 text-slate-300 text-left text-sm">
+                                <div class="bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <strong class="text-white block mb-1"><i class="fa-solid fa-industry text-cyan-400 mr-2"></i>Engineering Scope &amp; Contribution:</strong>
+                                    Engineered RESTful service endpoints in Node.js and TypeScript for shop-floor hardware/scanners, designed relational MySQL tables capturing component serialization, ensured transactional consistency to prevent out-of-order station bypasses, and conducted regression tests.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between bg-dark/60 p-4 rounded-xl border border-white/5">
+                            <div>
+                                <span class="text-xs uppercase font-mono tracking-wider text-slate-400 block mb-2">Key Engineering Challenges:</span>
+                                <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+                                    <li>Strict sequential station state machines</li>
+                                    <li>Sub-50ms barcode scan response time</li>
+                                    <li>Complete immutable audit trail records</li>
+                                    <li>Zero data loss during network hiccups</li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-white/10 mt-4">
+                                <button data-case-study-target="modal-mes" class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full text-xs font-bold bg-cyan-500/20 hover:bg-cyan-500 text-cyan-300 hover:text-white border border-cyan-500/40 transition-all">
+                                    <i class="fa-solid fa-network-wired mr-2"></i> Read MES Architecture Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Case Studies Hub Section -->
+        <section id="case-studies" class="section max-w-7xl mx-auto px-6 observe-me">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
+                Technical Case Studies &amp; Architecture
+            </h2>
+            <p class="text-center text-slate-400 mb-12 text-base max-w-2xl mx-auto">
+                Detailed breakdowns of system requirements, architectural diagrams, trade-offs, security mechanisms, and testing strategies.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Case Study Card 1 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10 flex flex-col justify-between hover:border-accent/40 transition-all">
+                    <div>
+                        <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-2">Case Study 01</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time TeamTrack Platform</h3>
+                        <p class="text-sm text-slate-400 mb-4">
+                            How HMAC-SHA256 signature middleware and Socket.IO rooms decouple inter-service admin telemetry and real-time collaboration.
+                        </p>
+                    </div>
+                    <button data-case-study-target="modal-teamtrack" class="text-accent text-sm font-semibold flex items-center gap-2 hover:underline">
+                        Explore Full Architecture <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Case Study Card 2 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10 flex flex-col justify-between hover:border-accent2/40 transition-all">
+                    <div>
+                        <span class="text-xs font-mono text-accent2 uppercase tracking-wider block mb-2">Case Study 02</span>
+                        <h3 class="text-xl font-bold text-white mb-2">VisionGuard AI Anti-Spoofing</h3>
+                        <p class="text-sm text-slate-400 mb-4">
+                            Architecting a 3-tier pipeline connecting browser webcams, Python YOLOv11 inferencing, and Node.js audit backends.
+                        </p>
+                    </div>
+                    <button data-case-study-target="modal-visionguard" class="text-accent2 text-sm font-semibold flex items-center gap-2 hover:underline">
+                        Explore Full Architecture <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Case Study Card 3 -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 border border-white/10 flex flex-col justify-between hover:border-cyan-400/40 transition-all">
+                    <div>
+                        <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider block mb-2">Case Study 03</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Industrial MES Traceability</h3>
+                        <p class="text-sm text-slate-400 mb-4">
+                            Sanitized analysis of high-throughput manufacturing state validation, relational lot tracking, and hardware integration.
+                        </p>
+                    </div>
+                    <button data-case-study-target="modal-mes" class="text-cyan-400 text-sm font-semibold flex items-center gap-2 hover:underline">
+                        Explore Full Architecture <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
             </div>
         </section>
 
         <!-- Technical Skills Section -->
         <section id="skills" class="section max-w-7xl mx-auto px-6 observe-me">
             <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Technical Skills
+                Technical Skills &amp; Capabilities
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
@@ -263,82 +470,77 @@
                 <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
                     <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-code text-accent mr-3"></i> Languages</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Java</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JavaScript</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JavaScript (ES6+)</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">TypeScript</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Dart</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Python</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Dart</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Java</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">SQL</span>
                     </div>
                 </div>
 
-                <!-- Category 2: Frontend & Mobile -->
-                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-mobile-screen-button text-accent mr-3"></i> Frontend &amp; Mobile</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React.js</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Next.js</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">HTML5</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">CSS3</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Flutter</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React Native</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Xcode</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Android Studio</span>
-                    </div>
-                </div>
-
-                <!-- Category 3: Backend -->
+                <!-- Category 2: Backend & Systems -->
                 <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
                     <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-server text-accent mr-3"></i> Backend &amp; Architecture</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Node.js</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Express.js</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">REST APIs</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Microservices</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JWT</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">RESTful APIs</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Socket.IO</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">JWT &amp; RBAC</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">HMAC Authentication</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Microservices Design</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Frontend & Mobile -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-mobile-screen-button text-accent mr-3"></i> Frontend &amp; Mobile</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Next.js</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Flutter</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">React Native (iOS)</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">HTML5 / CSS3</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Tailwind CSS</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Xcode</span>
                     </div>
                 </div>
 
                 <!-- Category 4: Databases -->
                 <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-database text-accent mr-3"></i> Databases</h3>
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-database text-accent mr-3"></i> Databases &amp; Storage</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">MySQL</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">PostgreSQL</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Oracle</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">SQLite</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Sequelize ORM</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Relational Normalization</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Index Optimization</span>
                     </div>
                 </div>
 
-                <!-- Category 5: AI & Tools -->
+                <!-- Category 5: AI & Computer Vision -->
                 <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-brain text-accent mr-3"></i> AI &amp; Tools</h3>
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-brain text-accent mr-3"></i> Applied AI &amp; Vision</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Ultralytics YOLO</span>
                         <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">OpenCV</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Deep Learning</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Git &amp; GitHub</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Docker</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white hover:border-accent transition-all">Postman</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Jira</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Firebase</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Splunk</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Playwright</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Selenium</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Antigravity</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">LLM Studio</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Liveness Detection</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Model Inference</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Dataset Preparation</span>
                     </div>
                 </div>
 
-                <!-- Category 6: Core Concepts -->
+                <!-- Category 6: Tools & Practices -->
                 <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 hover:border-accent/40 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-layer-group text-accent mr-3"></i> Core Concepts</h3>
+                    <h3 class="text-xl font-bold text-white mb-5 flex items-center"><i class="fa-solid fa-screwdriver-wrench text-accent mr-3"></i> Tools &amp; Practices</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">OOP</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">DSA</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Database Design</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">CI/CD</span>
-                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Agile/Scrum</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Git &amp; GitHub</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Postman</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Agile / Scrum</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Jira</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Clean Code &amp; OOP</span>
+                        <span class="px-3.5 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:bg-accent hover:text-white transition-all">Debugging &amp; QA</span>
                     </div>
                 </div>
 
@@ -348,7 +550,7 @@
         <!-- Education Section -->
         <section id="education" class="section max-w-7xl mx-auto px-6 observe-me">
             <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Education
+                Education &amp; Training
             </h2>
             <div class="max-w-4xl mx-auto space-y-6">
                 
@@ -359,6 +561,19 @@
                         <span class="text-accent font-semibold text-sm">CGPA: 8.21 / 10 &nbsp;|&nbsp; 2020 &ndash; 2024</span>
                     </div>
                     <p class="text-slate-300 font-medium">Hindusthan College of Engineering and Technology, Coimbatore</p>
+                    <p class="text-xs text-slate-400 mt-2">Core Coursework: Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Computer Networks, Object-Oriented Software Engineering.</p>
+                </div>
+
+                <!-- Training Certificate -->
+                <div class="glass p-6 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl hover:border-accent2/30 transition-all">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-certificate text-accent text-xl"></i>
+                        <h3 class="text-lg font-bold text-white">Full Stack Web Development Intensive Program</h3>
+                    </div>
+                    <p class="text-accent2 font-semibold text-sm mb-2">Qtree Technologies (July 2024 &ndash; Dec 2024)</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        6-month practical curriculum covering Node.js, Express, React, MySQL database transactions, REST API standards, Git workflows, and collaborative Agile development.
+                    </p>
                 </div>
 
                 <!-- HSC & SSLC Grid -->
@@ -383,64 +598,289 @@
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section class="section max-w-7xl mx-auto px-6 observe-me">
-            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Certifications
-            </h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="glass p-6 sm:p-8 rounded-2xl bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <i class="fa-solid fa-certificate text-accent text-2xl"></i>
-                        <h3 class="text-xl font-bold text-white">Full Stack Web Development Training</h3>
-                    </div>
-                    <p class="text-accent2 font-semibold text-sm mb-3">Qtree Technologies (6 months)</p>
-                    <p class="text-slate-300 text-sm leading-relaxed">
-                        Hands-on intensive training in HTML, CSS, JavaScript, React.js, Node.js, Express.js, MySQL, RESTful APIs, Git, and Agile software development workflows.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Strengths & Soft Skills Section -->
-        <section class="section max-w-7xl mx-auto px-6 observe-me pb-6">
-            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Strengths &amp; Soft Skills
-            </h2>
-            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-3">
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-puzzle-piece text-accent mr-2"></i>Problem Solving</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-chart-simple text-accent mr-2"></i>Analytical Thinking</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-users text-accent mr-2"></i>Team Collaboration</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-comments text-accent mr-2"></i>Communication Skills</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bolt text-accent mr-2"></i>Adaptability &amp; Quick Learning</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-clock text-accent mr-2"></i>Time Management</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bullseye text-accent mr-2"></i>Attention to Detail</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-code text-accent mr-2"></i>Clean Code Practices</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-arrows-spin text-accent mr-2"></i>Agile Development</span>
-                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-slate-300 hover:border-accent hover:text-white transition-all"><i class="fa-solid fa-bug-slash text-accent mr-2"></i>Debugging &amp; Troubleshooting</span>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Contact Footer Section -->
+    <!-- Contact & Enquiry Conversion Footer Section -->
     <footer id="contact" class="footer bg-darker py-16 border-t border-white/10 mt-12">
         <div class="footer-content max-w-4xl mx-auto px-6 text-center observe-me">
             <h2 class="section-title text-3xl sm:text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">
-                Let's Connect
+                Let's Discuss Engineering Opportunities
             </h2>
-            <p class="text-slate-400 mb-8 text-base sm:text-lg">Open to software developer roles, full-stack &amp; mobile engineering projects, or technical collaboration.</p>
+            <p class="text-slate-400 mb-8 text-base sm:text-lg max-w-2xl mx-auto">
+                Currently open to software developer positions, backend/systems engineering contracts, and technical collaboration. Located in Tamil Nadu, India — open to on-site, hybrid, or remote engagements.
+            </p>
+
+            <!-- Direct Contact Actions Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+                <!-- Direct Email Action -->
+                <a href="mailto:suryamurugasen135@gmail.com?subject=Software%20Engineering%20Opportunity%20-%20Surya%20M&body=Hi%20Surya,%0A%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20technical%20role%20/%20project%20involving...%0A" class="p-4 rounded-2xl bg-slate-800/90 border border-white/10 hover:border-accent hover:bg-slate-700/80 transition-all text-left flex items-center gap-4 group">
+                    <div class="w-12 h-12 rounded-xl bg-accent/20 border border-accent/40 flex items-center justify-center text-accent text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-mono">Send Email (Pre-formatted)</span>
+                        <span class="text-white font-medium text-sm sm:text-base break-all">suryamurugasen135@gmail.com</span>
+                    </div>
+                </a>
+
+                <!-- One-Click Copy Email Utility -->
+                <button id="copy-email-btn" type="button" class="p-4 rounded-2xl bg-slate-800/90 border border-white/10 hover:border-accent hover:bg-slate-700/80 transition-all text-left flex items-center gap-4 group cursor-pointer focus-visible:ring-2 focus-visible:ring-accent">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-regular fa-clone"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block font-mono">Quick Clipboard Copy</span>
+                        <span id="copy-email-text" class="text-white font-medium text-sm sm:text-base">Copy Email Address</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Social Links & Direct Call -->
             <div class="contact-links flex flex-wrap justify-center gap-4">
-                <a href="mailto:suryamurugasen135@gmail.com" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-solid fa-envelope mr-3 text-accent group-hover:text-white transition-colors"></i> suryamurugasen135@gmail.com</a>
-                <a href="tel:9092436936" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-solid fa-phone mr-3 text-accent group-hover:text-white transition-colors"></i> 9092436936</a>
-                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-brands fa-github mr-3 text-accent group-hover:text-white transition-colors"></i> GitHub</a>
-                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md"><i class="fa-brands fa-linkedin mr-3 text-accent group-hover:text-white transition-colors"></i> LinkedIn</a>
+                <a href="tel:9092436936" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md">
+                    <i class="fa-solid fa-phone mr-3 text-accent group-hover:text-white transition-colors"></i> +91 9092436936
+                </a>
+                <a href="https://github.com/surya-murugasen" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md">
+                    <i class="fa-brands fa-github mr-3 text-accent group-hover:text-white transition-colors"></i> github.com/surya-murugasen
+                </a>
+                <a href="https://linkedin.com/in/surya-m-softwareservicedeveloper" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md">
+                    <i class="fa-brands fa-linkedin mr-3 text-accent group-hover:text-white transition-colors"></i> linkedin.com/in/surya-m
+                </a>
+                <a href="Surya_M_Resume.pdf" download="Surya_M_Resume.pdf" class="px-6 py-3 rounded-full bg-slate-800/80 border border-white/10 hover:border-accent hover:bg-accent text-white font-medium transition-all flex items-center group shadow-md">
+                    <i class="fa-solid fa-file-pdf mr-3 text-red-400 group-hover:text-white transition-colors"></i> Resume PDF
+                </a>
             </div>
         </div>
         <div class="footer-bottom text-center pt-8 mt-12 border-t border-white/5 text-slate-500 text-sm">
-            <p>&copy; 2026 Surya M. Software Developer. All Rights Reserved.</p>
+            <p>&copy; 2026 Surya M. Software Developer. Hosted statically with zero external tracking cookies.</p>
         </div>
     </footer>
+
+    <!-- ============================================================== -->
+    <!-- TECHNICAL CASE STUDY MODAL 1: TEAMTRACK PLATFORM               -->
+    <!-- ============================================================== -->
+    <div id="modal-teamtrack" class="case-study-modal hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-teamtrack-title" aria-hidden="true">
+        <div class="case-study-content max-w-4xl w-full bg-slate-900 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl relative text-left">
+            <button data-close-modal class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all focus-visible:ring-2 focus-visible:ring-accent" aria-label="Close TeamTrack Case Study Dialog">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-1">Architecture Deep Dive</span>
+                <h3 id="modal-teamtrack-title" class="text-2xl sm:text-3xl font-extrabold text-white">
+                    TeamTrack &ndash; Real-Time Project Management Platform
+                </h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="px-2.5 py-1 rounded-md text-xs bg-emerald-500/20 text-emerald-300 font-mono">Status: Source Available &bull; Local Demo</span>
+                    <a href="https://github.com/surya-murugasen/TeamTrack_-_Real-Time_Project_Management_Platform" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md text-xs bg-white/10 hover:bg-white/20 text-white font-mono flex items-center gap-1.5">
+                        <i class="fa-brands fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+                <!-- 1. Problem Statement -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amber-400"></i> 1. Problem Statement</h4>
+                    <p>Agile engineering teams require immediate visibility into task status transitions, document version revisions, and sprint workloads. Polling REST APIs creates high server load and introduces up to 10–30s latency, causing conflicting updates across remote developers.</p>
+                </div>
+
+                <!-- 2. Requirements & Constraints -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-list-check text-accent"></i> 2. Requirements &amp; Constraints</h4>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Sub-200ms real-time event dissemination across connected clients.</li>
+                        <li>Role-Based Access Control (RBAC): Admin, Project Manager, and Developer permissions.</li>
+                        <li>Secure inter-service integration endpoint for external telemetry aggregators without exposing user credentials.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. System Architecture Diagram -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-diagram-project text-accent2"></i> 3. System Architecture</h4>
+                    <div class="diagram-box p-4 rounded-xl text-slate-300 overflow-x-auto whitespace-pre font-mono">
++------------------------+      HTTP REST (JWT Auth)      +---------------------------------+
+|  Next.js / React Client | &lt;============================&gt; |  Node.js / Express API Server   |
++------------------------+                                |  - Controller / Service Layer   |
+           |                                              |  - Role-Based Access Control    |
+           | WebSockets (Socket.IO)                       +---------------------------------+
+           |                                                               |
++------------------------+      HMAC-SHA256 Signature Auth                 | Sequelize ORM
+| Central Admin / Health | &lt;------------------------------&gt; [hmacAuth.ts]  |
++------------------------+                                                 v
+                                                          +---------------------------------+
+                                                          |  MySQL Relational Database      |
+                                                          |  - Users, Projects, Tasks, Logs |
+                                                          +---------------------------------+</div>
+                </div>
+
+                <!-- 4. Technology Choices & Rationale -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb text-yellow-400"></i> 4. Technology Choices &amp; Rationale</h4>
+                    <p><strong class="text-white">Node.js + TypeScript:</strong> Single event loop provides high-concurrency I/O for Socket.IO while TypeScript eliminates runtime type mismatches across request payloads.</p>
+                    <p class="mt-1"><strong class="text-white">MySQL + Sequelize:</strong> Strict foreign key constraints and transactional semantics ensure tasks cannot orphan if parent projects or user accounts are modified.</p>
+                </div>
+
+                <!-- 5. Database Design & API Structure -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-database text-indigo-400"></i> 5. Database Schema &amp; Endpoints</h4>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><code>Users</code> (id, name, email, password_hash, role, created_at)</li>
+                        <li><code>Projects</code> (id, title, description, manager_id, status, created_at)</li>
+                        <li><code>Tasks</code> (id, project_id, assigned_to, title, priority, status, updated_at)</li>
+                        <li>Key Endpoints: <code>POST /api/auth/login</code>, <code>GET /api/projects</code>, <code>POST /api/tasks</code>, <code>GET /api/admin/stats</code> (HMAC protected).</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Important Implementation Decisions -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 6. Security Controls &amp; HMAC Middleware</h4>
+                    <p>Engineered <code>server/src/middlewares/hmacAuth.ts</code>: Validates incoming server-to-server requests using an HMAC-SHA256 signature generated with a pre-shared <code>ADMIN_INTEGRATION_SECRET</code>. Requests with missing headers or altered payloads fail immediately with <code>401 Unauthorized</code>.</p>
+                </div>
+
+                <!-- 7. Testing & Operational Verification -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-vial text-cyan-400"></i> 7. Testing &amp; Verification</h4>
+                    <p>Validated endpoint responses using Postman collections; tested Socket.IO connection recovery during artificial network drops; confirmed aggregate stats queries execute in under 15ms on indexed project tables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TECHNICAL CASE STUDY MODAL 2: VISIONGUARD AI ANTI-SPOOFING     -->
+    <!-- ============================================================== -->
+    <div id="modal-visionguard" class="case-study-modal hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-visionguard-title" aria-hidden="true">
+        <div class="case-study-content max-w-4xl w-full bg-slate-900 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl relative text-left">
+            <button data-close-modal class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all focus-visible:ring-2 focus-visible:ring-accent" aria-label="Close VisionGuard Case Study Dialog">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-xs font-mono text-accent2 uppercase tracking-wider block mb-1">Architecture Deep Dive</span>
+                <h3 id="modal-visionguard-title" class="text-2xl sm:text-3xl font-extrabold text-white">
+                    VisionGuard AI &ndash; Enterprise Anti-Face Spoofing System
+                </h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="px-2.5 py-1 rounded-md text-xs bg-emerald-500/20 text-emerald-300 font-mono">Status: Source Available &bull; Local Demo</span>
+                    <a href="https://github.com/surya-murugasen/AI-powered_Enterprise_Anti-Face_Spoofing_System" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md text-xs bg-white/10 hover:bg-white/20 text-white font-mono flex items-center gap-1.5">
+                        <i class="fa-brands fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+                <!-- 1. Problem Statement -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amber-400"></i> 1. Problem Statement</h4>
+                    <p>Conventional face recognition algorithms can be easily circumvented using printed photos (2D attacks) or high-resolution tablet replays. Security-critical verification requires real-time presentation attack detection (PAD) before granting access.</p>
+                </div>
+
+                <!-- 2. System Architecture -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-diagram-project text-accent2"></i> 2. 3-Tier Multi-Process Architecture</h4>
+                    <div class="diagram-box p-4 rounded-xl text-slate-300 overflow-x-auto whitespace-pre font-mono">
+[ Browser Client (React/Vite) ]
+  |-- 1. Captures webcam video stream @ 3 FPS
+  |-- 2. Emits Base64 frame via WebSocket
+  |
+  +=================&gt; [ Python AI Microservice (Flask-SocketIO) ]
+                            |-- 3. Decodes frame via OpenCV
+                            |-- 4. Runs inference on YOLOv11 (`best.pt`)
+                            |-- 5. Emits Bounding Boxes &amp; Confidence back
+                            |-- 6. Async HTTP POST detection stats
+                            v
+                      [ Node.js Audit Backend (Express) ]
+                            |-- 7. Persists spoof attempt audit record
+                            v
+                      [ SQLite Database (Sequelize) ]</div>
+                </div>
+
+                <!-- 3. Key Implementation Decisions -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-microchip text-emerald-400"></i> 3. Pipeline Decisions &amp; Performance Tuning</h4>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong class="text-white">Frame Rate Throttling:</strong> Throttling client capture to 3 FPS prevents buffer bloat on consumer webcams and guarantees inference times under 120ms without GPU overload.</li>
+                        <li><strong class="text-white">Model Training:</strong> Fine-tuned Ultralytics YOLO model on balanced splits of genuine human faces and presentation attack mediums (curated Real/Fake sets).</li>
+                        <li><strong class="text-white">Asynchronous Audit Logging:</strong> Decoupled the Node.js database logging from the live video WebSocket stream so database disk writes never stall real-time visual feedback.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Verification Evidence -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> 4. Verification &amp; Testing Evidence</h4>
+                    <p>Verified with live webcam tests against printed color photographs and mobile screen video replays. Bounding boxes correctly labeled spoof attacks in under 150ms total latency; administrative dashboard aggregated spoof events accurately.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TECHNICAL CASE STUDY MODAL 3: MES TRACEABILITY (SANITIZED)     -->
+    <!-- ============================================================== -->
+    <div id="modal-mes" class="case-study-modal hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-mes-title" aria-hidden="true">
+        <div class="case-study-content max-w-4xl w-full bg-slate-900 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl relative text-left">
+            <button data-close-modal class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all focus-visible:ring-2 focus-visible:ring-accent" aria-label="Close MES Traceability Case Study Dialog">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider block mb-1">Industrial Systems Case Study (Sanitized)</span>
+                <h3 id="modal-mes-title" class="text-2xl sm:text-3xl font-extrabold text-white">
+                    Manufacturing Execution System (MES) &ndash; Traceability Platform
+                </h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="px-2.5 py-1 rounded-md text-xs bg-cyan-500/20 text-cyan-300 font-mono">Domain: Industrial Traceability &bull; KnowledgeQ</span>
+                    <span class="px-2.5 py-1 rounded-md text-xs bg-white/10 text-slate-300 font-mono">Confidentiality Preserved</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+                <!-- 1. Problem Statement -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-industry text-cyan-400"></i> 1. Problem Context &amp; Objective</h4>
+                    <p>Modern industrial assembly lines require complete traceability: every component, sub-assembly, and finished unit must be tracked through designated sequential stations. If a part skips a mandatory testing or assembly step, the system must immediately reject it to prevent costly recalls and ensure safety standards.</p>
+                </div>
+
+                <!-- 2. Architectural Pipeline -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-network-wired text-accent"></i> 2. High-Level Flow Architecture</h4>
+                    <div class="diagram-box p-4 rounded-xl text-slate-300 overflow-x-auto whitespace-pre font-mono">
+[ Hardware Scanner / Station Terminal ]
+           |
+           v (Barcode / Serialized LOT Scan)
+[ Node.js / TypeScript MES API Service ]
+           |
+           +-- 1. Validate Station Sequence &amp; Pre-requisite State
+           +-- 2. Reject if prior quality inspection incomplete
+           +-- 3. Execute transactional transition in MySQL
+           |
+           v
+[ Relational Audit Log &amp; WIP State Tables ]
+           |
+           v
+[ Real-time Production Dashboard &amp; Quality Metrics ]</div>
+                </div>
+
+                <!-- 3. Key Engineering Responsibilities -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-code text-indigo-400"></i> 3. My Engineering Contributions</h4>
+                    <ul class="list-disc pl-5 space-y-1.5">
+                        <li><strong class="text-white">API Service Endpoints:</strong> Built and maintained TypeScript service layers processing serialized part scans and station handshakes.</li>
+                        <li><strong class="text-white">Relational Data Integrity:</strong> Designed indexed MySQL tables ensuring serialization unique constraints, parent-child component relationships, and append-only audit histories.</li>
+                        <li><strong class="text-white">Error Handling &amp; Edge Cases:</strong> Implemented defensive validations for barcode misreads, duplicate scans, and out-of-order station progressions with distinct error codes for line operators.</li>
+                        <li><strong class="text-white">Agile &amp; Release Collaboration:</strong> Participated in sprint planning, code reviews, and defect triage alongside QA and operations teams.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Operational Considerations -->
+                <div>
+                    <h4 class="text-base font-bold text-white mb-2 flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 4. Operational Reliability &amp; Data Consistency</h4>
+                    <p>Production line speed demands response times under 50 milliseconds per scan. Database queries utilize indexed foreign keys and connection pooling to avoid locking tables during concurrent high-throughput shift operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
