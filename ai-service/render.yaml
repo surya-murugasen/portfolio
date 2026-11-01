@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: surya-portfolio-ai-assistant
+    runtime: python
+    rootDir: ai-service
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.6
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://surya-murugasen-portfolio-5f4d33.netlify.app
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: 20
+      - key: RATE_LIMIT_WINDOW_SECONDS
+        value: 60

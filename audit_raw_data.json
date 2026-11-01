@@ -1,0 +1,1794 @@
+{
+  "timestamp": "2026-11-01T16:07:14.935Z",
+  "environment": {
+    "nodeVersion": "v22.12.0",
+    "platform": "win32",
+    "serverUrl": "http://localhost:3000",
+    "serverReachable": true,
+    "enginesAvailable": {
+      "chromium": true,
+      "webkit": true
+    }
+  },
+  "summary": {
+    "totalViewportCombinations": 52,
+    "combinationsTested": 52,
+    "passedCombinations": 52,
+    "failedCombinations": 0,
+    "errorCombinations": 0
+  },
+  "engineResults": {
+    "Chromium": {
+      "launched": true,
+      "testedCount": 26,
+      "combinations": [
+        {
+          "id": "Chromium-350px-dark",
+          "engine": "Chromium",
+          "viewportName": "350px (Small Android / Compact)",
+          "category": "Mobile",
+          "targetWidth": 350,
+          "targetHeight": 667,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 350,
+            "innerH": 667,
+            "scrollW": 350,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-350px-light",
+          "engine": "Chromium",
+          "viewportName": "350px (Small Android / Compact)",
+          "category": "Mobile",
+          "targetWidth": 350,
+          "targetHeight": 667,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 350,
+            "innerH": 667,
+            "scrollW": 350,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-375px-dark",
+          "engine": "Chromium",
+          "viewportName": "375px (iPhone SE)",
+          "category": "Mobile",
+          "targetWidth": 375,
+          "targetHeight": 667,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 375,
+            "innerH": 667,
+            "scrollW": 375,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-375px-light",
+          "engine": "Chromium",
+          "viewportName": "375px (iPhone SE)",
+          "category": "Mobile",
+          "targetWidth": 375,
+          "targetHeight": 667,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 375,
+            "innerH": 667,
+            "scrollW": 375,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-390px-dark",
+          "engine": "Chromium",
+          "viewportName": "390px (iPhone 13/14/15)",
+          "category": "Mobile",
+          "targetWidth": 390,
+          "targetHeight": 844,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 390,
+            "innerH": 844,
+            "scrollW": 390,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-390px-light",
+          "engine": "Chromium",
+          "viewportName": "390px (iPhone 13/14/15)",
+          "category": "Mobile",
+          "targetWidth": 390,
+          "targetHeight": 844,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 390,
+            "innerH": 844,
+            "scrollW": 390,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-430px-dark",
+          "engine": "Chromium",
+          "viewportName": "430px (iPhone Pro Max)",
+          "category": "Mobile",
+          "targetWidth": 430,
+          "targetHeight": 932,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 430,
+            "innerH": 932,
+            "scrollW": 430,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-430px-light",
+          "engine": "Chromium",
+          "viewportName": "430px (iPhone Pro Max)",
+          "category": "Mobile",
+          "targetWidth": 430,
+          "targetHeight": 932,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 430,
+            "innerH": 932,
+            "scrollW": 430,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-600px-dark",
+          "engine": "Chromium",
+          "viewportName": "600px (Small Tablet)",
+          "category": "Tablet",
+          "targetWidth": 600,
+          "targetHeight": 960,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 600,
+            "innerH": 960,
+            "scrollW": 600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-600px-light",
+          "engine": "Chromium",
+          "viewportName": "600px (Small Tablet)",
+          "category": "Tablet",
+          "targetWidth": 600,
+          "targetHeight": 960,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 600,
+            "innerH": 960,
+            "scrollW": 600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-768px-dark",
+          "engine": "Chromium",
+          "viewportName": "768px (iPad Mini Portrait)",
+          "category": "Tablet",
+          "targetWidth": 768,
+          "targetHeight": 1024,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 768,
+            "innerH": 1024,
+            "scrollW": 768,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-768px-light",
+          "engine": "Chromium",
+          "viewportName": "768px (iPad Mini Portrait)",
+          "category": "Tablet",
+          "targetWidth": 768,
+          "targetHeight": 1024,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 768,
+            "innerH": 1024,
+            "scrollW": 768,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-820px-dark",
+          "engine": "Chromium",
+          "viewportName": "820px (iPad Air Portrait)",
+          "category": "Tablet",
+          "targetWidth": 820,
+          "targetHeight": 1180,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 820,
+            "innerH": 1180,
+            "scrollW": 820,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-820px-light",
+          "engine": "Chromium",
+          "viewportName": "820px (iPad Air Portrait)",
+          "category": "Tablet",
+          "targetWidth": 820,
+          "targetHeight": 1180,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 820,
+            "innerH": 1180,
+            "scrollW": 820,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "Chromium-1024px-dark",
+          "engine": "Chromium",
+          "viewportName": "1024px (iPad Pro / Small Laptop)",
+          "category": "Tablet",
+          "targetWidth": 1024,
+          "targetHeight": 768,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1024,
+            "innerH": 768,
+            "scrollW": 1024,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1024px-light",
+          "engine": "Chromium",
+          "viewportName": "1024px (iPad Pro / Small Laptop)",
+          "category": "Tablet",
+          "targetWidth": 1024,
+          "targetHeight": 768,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1024,
+            "innerH": 768,
+            "scrollW": 1024,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1280px-dark",
+          "engine": "Chromium",
+          "viewportName": "1280px (MacBook Air 13)",
+          "category": "Laptop",
+          "targetWidth": 1280,
+          "targetHeight": 800,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1280,
+            "innerH": 800,
+            "scrollW": 1280,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1280px-light",
+          "engine": "Chromium",
+          "viewportName": "1280px (MacBook Air 13)",
+          "category": "Laptop",
+          "targetWidth": 1280,
+          "targetHeight": 800,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1280,
+            "innerH": 800,
+            "scrollW": 1280,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1366px-dark",
+          "engine": "Chromium",
+          "viewportName": "1366px (Standard Laptop HD)",
+          "category": "Laptop",
+          "targetWidth": 1366,
+          "targetHeight": 768,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1366,
+            "innerH": 768,
+            "scrollW": 1366,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1366px-light",
+          "engine": "Chromium",
+          "viewportName": "1366px (Standard Laptop HD)",
+          "category": "Laptop",
+          "targetWidth": 1366,
+          "targetHeight": 768,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1366,
+            "innerH": 768,
+            "scrollW": 1366,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1440px-dark",
+          "engine": "Chromium",
+          "viewportName": "1440px (MacBook Pro 15)",
+          "category": "Laptop",
+          "targetWidth": 1440,
+          "targetHeight": 900,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1440,
+            "innerH": 900,
+            "scrollW": 1440,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1440px-light",
+          "engine": "Chromium",
+          "viewportName": "1440px (MacBook Pro 15)",
+          "category": "Laptop",
+          "targetWidth": 1440,
+          "targetHeight": 900,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1440,
+            "innerH": 900,
+            "scrollW": 1440,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1600px-dark",
+          "engine": "Chromium",
+          "viewportName": "1600px (Desktop Widescreen)",
+          "category": "Desktop",
+          "targetWidth": 1600,
+          "targetHeight": 900,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1600,
+            "innerH": 900,
+            "scrollW": 1600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1600px-light",
+          "engine": "Chromium",
+          "viewportName": "1600px (Desktop Widescreen)",
+          "category": "Desktop",
+          "targetWidth": 1600,
+          "targetHeight": 900,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1600,
+            "innerH": 900,
+            "scrollW": 1600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1920px-dark",
+          "engine": "Chromium",
+          "viewportName": "1920px (Full HD Desktop)",
+          "category": "Desktop",
+          "targetWidth": 1920,
+          "targetHeight": 1080,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1920,
+            "innerH": 1080,
+            "scrollW": 1920,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "Chromium-1920px-light",
+          "engine": "Chromium",
+          "viewportName": "1920px (Full HD Desktop)",
+          "category": "Desktop",
+          "targetWidth": 1920,
+          "targetHeight": 1080,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1920,
+            "innerH": 1080,
+            "scrollW": 1920,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        }
+      ]
+    },
+    "WebKit": {
+      "launched": true,
+      "testedCount": 26,
+      "combinations": [
+        {
+          "id": "WebKit-350px-dark",
+          "engine": "WebKit",
+          "viewportName": "350px (Small Android / Compact)",
+          "category": "Mobile",
+          "targetWidth": 350,
+          "targetHeight": 667,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 350,
+            "innerH": 667,
+            "scrollW": 350,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-350px-light",
+          "engine": "WebKit",
+          "viewportName": "350px (Small Android / Compact)",
+          "category": "Mobile",
+          "targetWidth": 350,
+          "targetHeight": 667,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 350,
+            "innerH": 667,
+            "scrollW": 350,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-375px-dark",
+          "engine": "WebKit",
+          "viewportName": "375px (iPhone SE)",
+          "category": "Mobile",
+          "targetWidth": 375,
+          "targetHeight": 667,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 375,
+            "innerH": 667,
+            "scrollW": 375,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-375px-light",
+          "engine": "WebKit",
+          "viewportName": "375px (iPhone SE)",
+          "category": "Mobile",
+          "targetWidth": 375,
+          "targetHeight": 667,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 375,
+            "innerH": 667,
+            "scrollW": 375,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-390px-dark",
+          "engine": "WebKit",
+          "viewportName": "390px (iPhone 13/14/15)",
+          "category": "Mobile",
+          "targetWidth": 390,
+          "targetHeight": 844,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 390,
+            "innerH": 844,
+            "scrollW": 390,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-390px-light",
+          "engine": "WebKit",
+          "viewportName": "390px (iPhone 13/14/15)",
+          "category": "Mobile",
+          "targetWidth": 390,
+          "targetHeight": 844,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 390,
+            "innerH": 844,
+            "scrollW": 390,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-430px-dark",
+          "engine": "WebKit",
+          "viewportName": "430px (iPhone Pro Max)",
+          "category": "Mobile",
+          "targetWidth": 430,
+          "targetHeight": 932,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 430,
+            "innerH": 932,
+            "scrollW": 430,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-430px-light",
+          "engine": "WebKit",
+          "viewportName": "430px (iPhone Pro Max)",
+          "category": "Mobile",
+          "targetWidth": 430,
+          "targetHeight": 932,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 430,
+            "innerH": 932,
+            "scrollW": 430,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-600px-dark",
+          "engine": "WebKit",
+          "viewportName": "600px (Small Tablet)",
+          "category": "Tablet",
+          "targetWidth": 600,
+          "targetHeight": 960,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 600,
+            "innerH": 960,
+            "scrollW": 600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-600px-light",
+          "engine": "WebKit",
+          "viewportName": "600px (Small Tablet)",
+          "category": "Tablet",
+          "targetWidth": 600,
+          "targetHeight": 960,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 600,
+            "innerH": 960,
+            "scrollW": 600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-768px-dark",
+          "engine": "WebKit",
+          "viewportName": "768px (iPad Mini Portrait)",
+          "category": "Tablet",
+          "targetWidth": 768,
+          "targetHeight": 1024,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 768,
+            "innerH": 1024,
+            "scrollW": 768,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-768px-light",
+          "engine": "WebKit",
+          "viewportName": "768px (iPad Mini Portrait)",
+          "category": "Tablet",
+          "targetWidth": 768,
+          "targetHeight": 1024,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 768,
+            "innerH": 1024,
+            "scrollW": 768,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-820px-dark",
+          "engine": "WebKit",
+          "viewportName": "820px (iPad Air Portrait)",
+          "category": "Tablet",
+          "targetWidth": 820,
+          "targetHeight": 1180,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 820,
+            "innerH": 1180,
+            "scrollW": 820,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-820px-light",
+          "engine": "WebKit",
+          "viewportName": "820px (iPad Air Portrait)",
+          "category": "Tablet",
+          "targetWidth": 820,
+          "targetHeight": 1180,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 820,
+            "innerH": 1180,
+            "scrollW": 820,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": true,
+            "isDrawerMode": true,
+            "desktopNavVisible": false
+          }
+        },
+        {
+          "id": "WebKit-1024px-dark",
+          "engine": "WebKit",
+          "viewportName": "1024px (iPad Pro / Small Laptop)",
+          "category": "Tablet",
+          "targetWidth": 1024,
+          "targetHeight": 768,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1024,
+            "innerH": 768,
+            "scrollW": 1024,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1024px-light",
+          "engine": "WebKit",
+          "viewportName": "1024px (iPad Pro / Small Laptop)",
+          "category": "Tablet",
+          "targetWidth": 1024,
+          "targetHeight": 768,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1024,
+            "innerH": 768,
+            "scrollW": 1024,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1280px-dark",
+          "engine": "WebKit",
+          "viewportName": "1280px (MacBook Air 13)",
+          "category": "Laptop",
+          "targetWidth": 1280,
+          "targetHeight": 800,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1280,
+            "innerH": 800,
+            "scrollW": 1280,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1280px-light",
+          "engine": "WebKit",
+          "viewportName": "1280px (MacBook Air 13)",
+          "category": "Laptop",
+          "targetWidth": 1280,
+          "targetHeight": 800,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1280,
+            "innerH": 800,
+            "scrollW": 1280,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1366px-dark",
+          "engine": "WebKit",
+          "viewportName": "1366px (Standard Laptop HD)",
+          "category": "Laptop",
+          "targetWidth": 1366,
+          "targetHeight": 768,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1366,
+            "innerH": 768,
+            "scrollW": 1366,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1366px-light",
+          "engine": "WebKit",
+          "viewportName": "1366px (Standard Laptop HD)",
+          "category": "Laptop",
+          "targetWidth": 1366,
+          "targetHeight": 768,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1366,
+            "innerH": 768,
+            "scrollW": 1366,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1440px-dark",
+          "engine": "WebKit",
+          "viewportName": "1440px (MacBook Pro 15)",
+          "category": "Laptop",
+          "targetWidth": 1440,
+          "targetHeight": 900,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1440,
+            "innerH": 900,
+            "scrollW": 1440,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1440px-light",
+          "engine": "WebKit",
+          "viewportName": "1440px (MacBook Pro 15)",
+          "category": "Laptop",
+          "targetWidth": 1440,
+          "targetHeight": 900,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1440,
+            "innerH": 900,
+            "scrollW": 1440,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1600px-dark",
+          "engine": "WebKit",
+          "viewportName": "1600px (Desktop Widescreen)",
+          "category": "Desktop",
+          "targetWidth": 1600,
+          "targetHeight": 900,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1600,
+            "innerH": 900,
+            "scrollW": 1600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1600px-light",
+          "engine": "WebKit",
+          "viewportName": "1600px (Desktop Widescreen)",
+          "category": "Desktop",
+          "targetWidth": 1600,
+          "targetHeight": 900,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1600,
+            "innerH": 900,
+            "scrollW": 1600,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1920px-dark",
+          "engine": "WebKit",
+          "viewportName": "1920px (Full HD Desktop)",
+          "category": "Desktop",
+          "targetWidth": 1920,
+          "targetHeight": 1080,
+          "theme": "dark",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1920,
+            "innerH": 1080,
+            "scrollW": 1920,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        },
+        {
+          "id": "WebKit-1920px-light",
+          "engine": "WebKit",
+          "viewportName": "1920px (Full HD Desktop)",
+          "category": "Desktop",
+          "targetWidth": 1920,
+          "targetHeight": 1080,
+          "theme": "light",
+          "status": "pass",
+          "metrics": {
+            "innerW": 1920,
+            "innerH": 1080,
+            "scrollW": 1920,
+            "hasOverflow": false,
+            "offendingEl": null,
+            "hamburgerVisible": false,
+            "isDrawerMode": false,
+            "desktopNavVisible": true
+          }
+        }
+      ]
+    }
+  },
+  "accessibilityAudit": {
+    "headings": {
+      "totalHeadings": 60,
+      "h1Count": 1,
+      "hasSingleH1": true,
+      "headingOrderErrors": [],
+      "headingTree": [
+        {
+          "tag": "h1",
+          "level": 1,
+          "text": "Surya M"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Engineering Positioning & Summary"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Backend & API Architecture"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Relational Data & Traceability"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Web & Mobile Clients"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Applied AI & Vision Pipelines"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Professional Experience"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Junior Software Developer"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "KnowledgeQ, Coimbatore"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Full Stack Web Development Trainee"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "Qtree Technologies"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Demonstrated Projects & Implementations"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "TeamTrack – Real-Time Project Management Platform"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "VisionGuard AI – Enterprise Anti-Face Spoofing Sys"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "RAG Document Intelligence – Vector Retrieval & Cit"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Manufacturing Execution System (MES) – Traceabilit"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Technical Case Studies & Architecture"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Real-Time TeamTrack Platform"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "VisionGuard AI Anti-Spoofing"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "RAG Document Intelligence"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Industrial MES Traceability"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Technical Skills & Capabilities"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Languages"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Backend & Architecture"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Frontend & Mobile"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Databases & Storage"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Applied AI & Vision"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Tools & Practices"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Education & Training"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "B.E. – Computer Science & Engineering"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Full Stack Web Development Intensive Program"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "HSC (Class XII)"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "SSLC (Class X)"
+        },
+        {
+          "tag": "h2",
+          "level": 2,
+          "text": "Let's Discuss Engineering Opportunities"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "TeamTrack – Real-Time Project Management Platform"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "1. Problem Statement"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "2. Requirements & Constraints"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "3. System Architecture"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "4. Technology Choices & Rationale"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "5. Database Schema & Endpoints"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "6. Security Controls & HMAC Middleware"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "7. Testing & Verification"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "VisionGuard AI – Enterprise Anti-Face Spoofing Sys"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "1. Problem Statement"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "2. 3-Tier Multi-Process Architecture"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "3. Pipeline Decisions & Performance Tuning"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "4. Verification & Testing Evidence"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Manufacturing Execution System (MES) – Traceabilit"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "1. Problem Context & Objective"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "2. High-Level Flow Architecture"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "3. My Engineering Contributions"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "4. Operational Reliability & Data Consistency"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "RAG Document Intelligence – Vector Retrieval & Mul"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "1. Problem Context & Objective"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "2. Requirements & Engineering Constraints"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "3. System Architecture & Data Pipeline"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "4. Technology Choices & Implementation Rationale"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "5. Phase 10 Multi-User Security & Authorization"
+        },
+        {
+          "tag": "h4",
+          "level": 4,
+          "text": "6. Verification & Testing Evidence"
+        },
+        {
+          "tag": "h3",
+          "level": 3,
+          "text": "Surya's Portfolio AI"
+        }
+      ]
+    },
+    "images": {
+      "totalImages": 1,
+      "missingAltCount": 0,
+      "images": [
+        {
+          "src": "your-image.jpg",
+          "alt": "Surya M - Software Developer Profile Photo",
+          "hasAltAttr": true,
+          "emptyAlt": false,
+          "width": 280,
+          "height": 280
+        }
+      ]
+    },
+    "formControls": {
+      "totalControls": 1,
+      "accessibleCount": 0,
+      "inaccessibleCount": 1,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "ai-input",
+          "type": "text",
+          "hasAssociatedLabel": false,
+          "ariaLabel": null,
+          "ariaLabelledby": null,
+          "placeholder": "Ask about skills, projects, or architecture...",
+          "isAccessible": false
+        }
+      ]
+    },
+    "interactiveElements": {
+      "totalVisible": 38,
+      "missingAccessibleName": 0,
+      "unnamedElements": [],
+      "under44pxCount": 26,
+      "under24pxCount": 4,
+      "sampleUnder44px": [
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Skip to main content",
+          "hasAccessibleName": true,
+          "width": 197.8,
+          "height": 43.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Surya M.",
+          "hasAccessibleName": true,
+          "width": 139.4,
+          "height": 40,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Home",
+          "hasAccessibleName": true,
+          "width": 62.3,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "About",
+          "hasAccessibleName": true,
+          "width": 62.5,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Experience",
+          "hasAccessibleName": true,
+          "width": 99.2,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Projects",
+          "hasAccessibleName": true,
+          "width": 77.6,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Case Studies",
+          "hasAccessibleName": true,
+          "width": 112.7,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "textSample": "Skills",
+          "hasAccessibleName": true,
+          "width": 57,
+          "height": 29.2,
+          "isUnder44px": true,
+          "isUnder24px": false
+        }
+      ]
+    },
+    "landmarks": {
+      "hasHeader": true,
+      "hasNav": true,
+      "hasMain": true,
+      "mainHasId": true,
+      "hasFooter": true,
+      "hasAside": true,
+      "skipLinkPresent": true,
+      "skipLinkTargetPresent": true
+    },
+    "focusIndicator": {
+      "focusVisibleDefined": true,
+      "selector": ":focus-visible",
+      "outlineStyle": "2px solid var(--border-focus)"
+    }
+  },
+  "contrastAudit": {
+    "dark": [
+      {
+        "name": "Body Text",
+        "selector": "p",
+        "sampleText": "Software Developer | Full-Stac",
+        "fgColor": "rgb(0, 0, 0)",
+        "bgColor": "rgb(58, 61, 70)",
+        "ratio": "1.94:1",
+        "requiredThreshold": "3:1",
+        "status": "fail"
+      },
+      {
+        "name": "Muted Subtitle",
+        "selector": ".hero p, .section-subtitle, .text-slate-400",
+        "sampleText": "\n                            \n",
+        "fgColor": "rgb(148, 163, 184)",
+        "bgColor": "rgb(76, 79, 87)",
+        "ratio": "3.2:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Desktop Nav Link",
+        "selector": ".nav-links a",
+        "sampleText": "Home",
+        "fgColor": "rgb(59, 127, 240)",
+        "bgColor": "rgb(77, 80, 88)",
+        "ratio": "2.1:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Primary Button",
+        "selector": ".btn-primary",
+        "sampleText": "Explore Projects",
+        "fgColor": "rgb(255, 255, 255)",
+        "bgColor": "rgb(58, 61, 70)",
+        "ratio": "10.85:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Card Title (h3)",
+        "selector": ".glass h3",
+        "sampleText": "Backend & API Architecture",
+        "fgColor": "rgb(255, 255, 255)",
+        "bgColor": "rgb(72, 77, 91)",
+        "ratio": "8.44:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Card Body Text",
+        "selector": ".glass p",
+        "sampleText": "Software Developer with proven",
+        "fgColor": "rgb(203, 213, 225)",
+        "bgColor": "rgb(72, 77, 91)",
+        "ratio": "5.68:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Emerald Status Badge",
+        "selector": ".text-emerald-300, .text-emerald-400",
+        "sampleText": "w-10 h-10 rounded-xl bg-emeral",
+        "fgColor": "rgb(52, 211, 153)",
+        "bgColor": "rgb(61, 99, 99)",
+        "ratio": "3.45:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Amber Warning Tag",
+        "selector": ".text-amber-400",
+        "sampleText": "JS",
+        "fgColor": "rgb(251, 191, 36)",
+        "bgColor": "rgb(19, 27, 45)",
+        "ratio": "10.29:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Cyan Badge",
+        "selector": ".text-cyan-400",
+        "sampleText": "fa-solid fa-mobile-screen text",
+        "fgColor": "rgb(34, 211, 238)",
+        "bgColor": "rgb(19, 27, 45)",
+        "ratio": "9.51:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Code Snippet",
+        "selector": "code",
+        "sampleText": "hmacAuth.ts",
+        "fgColor": "rgb(59, 130, 246)",
+        "bgColor": "rgb(87, 92, 104)",
+        "ratio": "1.82:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "AI Launcher Button Icon",
+        "selector": ".ai-launcher-btn i",
+        "sampleText": "fa-solid fa-wand-magic-sparkle",
+        "fgColor": "rgb(255, 255, 255)",
+        "bgColor": "rgb(58, 61, 70)",
+        "ratio": "10.85:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      }
+    ],
+    "light": [
+      {
+        "name": "Body Text",
+        "selector": "p",
+        "sampleText": "Software Developer | Full-Stac",
+        "fgColor": "rgb(51, 65, 85)",
+        "bgColor": "rgb(223, 225, 228)",
+        "ratio": "7.9:1",
+        "requiredThreshold": "3:1",
+        "status": "pass"
+      },
+      {
+        "name": "Muted Subtitle",
+        "selector": ".hero p, .section-subtitle, .text-slate-400",
+        "sampleText": "\n                            \n",
+        "fgColor": "rgb(100, 116, 139)",
+        "bgColor": "rgb(218, 221, 222)",
+        "ratio": "3.48:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Desktop Nav Link",
+        "selector": ".nav-links a",
+        "sampleText": "Home",
+        "fgColor": "rgb(38, 100, 235)",
+        "bgColor": "rgb(219, 221, 223)",
+        "ratio": "3.76:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Primary Button",
+        "selector": ".btn-primary",
+        "sampleText": "Explore Projects",
+        "fgColor": "rgb(15, 23, 42)",
+        "bgColor": "rgb(223, 225, 228)",
+        "ratio": "13.63:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Card Title (h3)",
+        "selector": ".glass h3",
+        "sampleText": "Backend & API Architecture",
+        "fgColor": "rgb(15, 23, 42)",
+        "bgColor": "rgb(234, 235, 237)",
+        "ratio": "14.97:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Card Body Text",
+        "selector": ".glass p",
+        "sampleText": "Software Developer with proven",
+        "fgColor": "rgb(51, 65, 85)",
+        "bgColor": "rgb(234, 235, 237)",
+        "ratio": "8.68:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      },
+      {
+        "name": "Emerald Status Badge",
+        "selector": ".text-emerald-300, .text-emerald-400",
+        "sampleText": "w-10 h-10 rounded-xl bg-emeral",
+        "fgColor": "rgb(52, 211, 153)",
+        "bgColor": "rgb(190, 225, 215)",
+        "ratio": "1.37:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Amber Warning Tag",
+        "selector": ".text-amber-400",
+        "sampleText": "JS",
+        "fgColor": "rgb(251, 191, 36)",
+        "bgColor": "rgb(253, 254, 254)",
+        "ratio": "1.65:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Cyan Badge",
+        "selector": ".text-cyan-400",
+        "sampleText": "fa-solid fa-mobile-screen text",
+        "fgColor": "rgb(34, 211, 238)",
+        "bgColor": "rgb(253, 254, 254)",
+        "ratio": "1.79:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "Code Snippet",
+        "selector": "code",
+        "sampleText": "hmacAuth.ts",
+        "fgColor": "rgb(59, 130, 246)",
+        "bgColor": "rgb(223, 224, 227)",
+        "ratio": "2.79:1",
+        "requiredThreshold": "4.5:1",
+        "status": "fail"
+      },
+      {
+        "name": "AI Launcher Button Icon",
+        "selector": ".ai-launcher-btn i",
+        "sampleText": "fa-solid fa-wand-magic-sparkle",
+        "fgColor": "rgb(15, 23, 42)",
+        "bgColor": "rgb(223, 225, 228)",
+        "ratio": "13.63:1",
+        "requiredThreshold": "4.5:1",
+        "status": "pass"
+      }
+    ]
+  },
+  "interactionAudit": {
+    "themeToggle": {
+      "tested": true,
+      "initialTheme": "light",
+      "toggledTheme": "dark",
+      "storedTheme": "dark",
+      "revertedTheme": "light",
+      "success": true
+    },
+    "mobileDrawer": {
+      "tested": true,
+      "isOpenAfterClick": true,
+      "backdropActive": true,
+      "isClosedAfterClick": true,
+      "success": true
+    },
+    "caseStudyModal": {
+      "tested": true,
+      "opened": true,
+      "focusMovedInside": true,
+      "hasFocusables": true,
+      "closedOnEscape": true,
+      "focusRestoredToTrigger": false,
+      "hasTabTrap": false
+    },
+    "aiAssistant": {
+      "tested": true,
+      "opened": true,
+      "charCountUpdated": true,
+      "clearWorks": true,
+      "closed": true,
+      "success": true
+    },
+    "linksAndResume": {
+      "tested": true,
+      "desktopResumeHref": "Surya_M_Resume.pdf",
+      "heroResumeHref": "Surya_M_Resume.pdf",
+      "webResumeHref": "resume.html",
+      "totalNavAnchors": 8,
+      "missingTargetIds": [],
+      "allAnchorsResolved": true,
+      "resumeFileExistsOnDisk": true
+    }
+  },
+  "printAudit": {
+    "hasPrintRules": false,
+    "printRulesCount": 0
+  },
+  "unverifiedAreas": []
+}
