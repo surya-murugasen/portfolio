@@ -46,18 +46,20 @@ PORTFOLIO_KNOWLEDGE = {
     },
     "professional_experience": [
         {
-            "role": "Junior Software Developer",
+            "role": "Software Developer",
             "company": "KnowledgeQ",
-            "location": "Coimbatore, India",
-            "period": "Feb 2025 – Present (Active)",
-            "domain": "Manufacturing Execution Systems (MES) & Fintech Mobile",
+            "location": "Coimbatore, Tamil Nadu, India (On-site)",
+            "period": "Jun 2025 – Present (1 yr 6 mos, Full-time)",
+            "domain": "Manufacturing Execution Systems (MES) & FinTech Solutions",
             "contributions": [
-                "Develop and maintain backend services and workflows for an enterprise Manufacturing Execution System (MES) application providing production-line traceability and station audit tracking.",
-                "Develop, maintain, and support React Native iOS applications, delivering features, defect resolution, and App Store builds for Fintech clients.",
-                "Engineer robust RESTful APIs in Node.js, Express, and TypeScript connected to relational MySQL databases for high-integrity transactions.",
-                "Collaborate closely with QA engineers, developers, and solution architects using Agile/Scrum sprints, Git branch workflows, and code reviews."
+                "Develop and maintain enterprise Manufacturing Execution System (MES) Traceability applications to improve production tracking, product traceability, and manufacturing workflows.",
+                "Build and enhance scalable backend services using Node.js, Express.js, TypeScript, REST APIs, and MySQL.",
+                "Develop and maintain React Native iOS applications for FinTech solutions, delivering new features, resolving production issues, and supporting App Store releases.",
+                "Collaborate with cross-functional teams including developers, QA engineers, business analysts, and stakeholders in an Agile/Scrum environment.",
+                "Participate in application debugging, performance optimization, code reviews, testing, and deployment activities.",
+                "Work with Git for version control and contribute to clean, maintainable, and production-ready code following software engineering best practices."
             ],
-            "technologies": ["Node.js", "Express.js", "TypeScript", "React.js", "React Native (iOS)", "Flutter", "MySQL", "REST APIs", "Xcode", "Git"]
+            "technologies": ["Node.js", "Express.js", "TypeScript", "React.js", "React Native (iOS)", "Flutter", "MySQL", "REST APIs", "Git", "Xcode", "Agile/Scrum", "Prompt Engineering"]
         },
         {
             "role": "Full Stack Web Development Trainee",

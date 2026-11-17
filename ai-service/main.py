@@ -4,6 +4,7 @@ Provides rate-limited, grounded AI responses using server-side LLM credentials.
 """
 
 import os
+import re
 import time
 import httpx
 from typing import List, Optional
@@ -105,14 +106,25 @@ def retrieve_curated_answer(query: str) -> Optional[str]:
     Direct lexical retrieval matcher over curated portfolio facts.
     Acts as a verified deterministic backup when no external LLM key is configured.
     """
-    q = query.lower()
+    q = query.lower().strip()
+
+    # Identity / Greetings / Assistant Name (use word boundary for short greetings like 'hi')
+    is_greeting = bool(re.search(r'\b(hi|hello|hey)\b', q))
+    is_identity = any(k in q for k in ["you name", "your name", "who are you", "who created you", "who made you", "what is your name", "identity"])
+    if is_identity or (is_greeting and len(q.split()) <= 4):
+        return (
+            "I am **Surya's Portfolio AI Assistant**!\n\n"
+            "I can answer questions regarding Surya's role as a **Software Developer at KnowledgeQ** (MES Traceability & FinTech solutions), "
+            "projects like **TeamTrack**, **VisionGuard AI**, and **RAG Document Intelligence**, his technical stack (**Node.js, Express, TypeScript, Python, MySQL, React, Flutter**), "
+            "education, or contact details."
+        )
 
     # MES / KnowledgeQ
     if any(k in q for k in ["mes", "traceability", "manufacturing", "knowledgeq"]):
         mes = PORTFOLIO_KNOWLEDGE["featured_projects"][2]
         return (
             f"**Manufacturing Execution System (MES) Traceability**\n\n"
-            f"• **Domain:** Industrial Traceability at KnowledgeQ (Feb 2025 – Present).\n"
+            f"• **Domain:** Industrial Traceability at KnowledgeQ (Jun 2025 – Present, Full-time).\n"
             f"• **Problem:** Enforce sequential station constraints and prevent uninspected component bypasses in production lines.\n"
             f"• **Surya's Role:** Engineered Node.js/TypeScript REST API service endpoints for shop-floor scanner handshakes with sub-50ms latency, and designed indexed MySQL tables for component lot genealogy.\n"
             f"• **Case Study:** View the sanitized case study directly in the portfolio modal."
@@ -215,9 +227,11 @@ def retrieve_curated_answer(query: str) -> Optional[str]:
     if any(k in q for k in ["experience", "work", "job", "career", "background"]):
         return (
             f"**Surya M's Professional Experience**\n\n"
-            f"1. **Junior Software Developer at KnowledgeQ** (Feb 2025 – Present):\n"
-            f"   • Backend engineering for MES Traceability platform in Node.js, TypeScript, and MySQL.\n"
-            f"   • Maintaining and deploying React Native iOS fintech applications.\n\n"
+            f"1. **Software Developer at KnowledgeQ** (Jun 2025 – Present · 1 yr 6 mos, Full-time · On-site):\n"
+            f"   • Develop and maintain enterprise Manufacturing Execution System (MES) Traceability applications.\n"
+            f"   • Build and enhance scalable backend services using Node.js, Express.js, TypeScript, REST APIs, and MySQL.\n"
+            f"   • Develop and maintain React Native iOS applications for FinTech solutions, delivering features and App Store releases.\n"
+            f"   • Cross-functional Agile collaboration, performance optimization, debugging, and Git best practices.\n\n"
             f"2. **Full Stack Web Development Trainee at Qtree Technologies** (July 2024 – Dec 2024):\n"
             f"   • 6-month intensive training developing REST APIs and React interfaces with MySQL.\n\n"
             f"• **Education:** B.E. in Computer Science & Engineering (2020 – 2024, CGPA 8.21/10) from Hindusthan College of Engineering and Technology."
